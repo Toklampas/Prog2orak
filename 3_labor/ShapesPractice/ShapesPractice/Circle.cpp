@@ -3,7 +3,8 @@
 
 Circle::Circle(double r)
 {
-	this->r = r;
+	this->r = 0;
+	setr(r);
 }
 
 double Circle::getr()

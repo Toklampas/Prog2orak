@@ -3,14 +3,18 @@
 
 Rectangle::Rectangle(double a)
 {
-	this->a = a;
-	this->b = a;
+	this->a = 0;
+	seta(a);
+	this->b = 0;
+	setb(a);
 }
 
 Rectangle::Rectangle(double a, double b)
 {
-	this->a = a;
-	this->b = b;
+	this->a = 0;
+	seta(a);
+	this->b = 0;
+	setb(b);
 }
 
 double Rectangle::geta()
