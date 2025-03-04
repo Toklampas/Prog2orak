@@ -2,9 +2,12 @@
 #include <stdio.h>
 #include <math.h>
 
-BoundingCircle::BoundingCircle(double a) : innerSquare(a), outerCircle(a* sqrt(2) / 2)
+BoundingCircle::BoundingCircle(double a)
 {
-
+	innerSquare.seta(a);
+	innerSquare.setb(a);
+	
+	outerCircle.setr(a * sqrt(2) / 2);
 }
 
 Rectangle BoundingCircle::getInnerSquare()
