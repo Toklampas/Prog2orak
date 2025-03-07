@@ -1,0 +1,4 @@
+Figyelem,
+az ebben a könynvtárban levõ kódok az órán demonstrációs céllal gyakran hirtelenjében írt, nem sokszor-ellenõrzött (és gyakran nem is szép) kódok.
+Azért kerültek ide, hogy aki késõbb érkezett az elõadásra, fel tudja venni a fonalat.
+ 
