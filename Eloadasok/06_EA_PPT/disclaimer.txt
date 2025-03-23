@@ -1,0 +1,4 @@
+Figyelem,
+az ebben a könyvtárban levõ kódok az órán demonstrációs céllal írt, az elmélet közben folyamatosan fejlõdõ megoldásokat tartalmazó kódokat tartalmaz. A végsõ kidolgozott kódok pl. az EA pdf fájlban találhatóak.
+Azért kerültek ide, hogy aki késõbb érkezett az elõadásra, fel tudja venni a fonalat.
+ 
