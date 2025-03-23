@@ -1,11 +1,13 @@
 ﻿#include "logging.h"
+#include <iostream>
 
 using namespace logging;
+using namespace std;
 
-Logger::Logger()
+Logger::Logger() : defaultLogLevel(DEBUG)
 {}
 
-Logger::Logger(const Logger& theOther)
+Logger::Logger(const Logger& theOther) : defaultLogLevel(theOther.defaultLogLevel)
 {}
 
 Logger& Logger::getInstance()
@@ -14,10 +16,31 @@ Logger& Logger::getInstance()
 	return theLogger;
 }
 
-void logging::Logger::setDefaultLogLevel(const LogLevel&)
+void Logger::setDefaultLogLevel(const LogLevel& level)
 {
+	defaultLogLevel = level;
 }
 
-void logging::Logger::log(LogLevel, const char*)
+void Logger::log(LogLevel level, const char* str)
 {
+	string logLevelStr;
+	logLevelStr = (level == DEBUG) ? "DEBUG" : (level == INFO) ? "INFO" : (level == WARN) ? "WARN" : "ERROR";
+	switch (defaultLogLevel)
+	{
+	case DEBUG:
+		std::cout << logLevelStr << ": " << str << std::endl;
+		break;
+	case INFO:
+		if (level != DEBUG)
+			std::cout << logLevelStr << ": " << str << std::endl;
+		break;
+	case WARN:
+		if (level == WARN || level == ERROR)
+			std::cout << logLevelStr << ": " << str << std::endl;
+		break;
+	case ERROR:
+		if (level == ERROR)
+			std::cout << logLevelStr << ": " << str << std::endl;
+		break;
+	}
 }
