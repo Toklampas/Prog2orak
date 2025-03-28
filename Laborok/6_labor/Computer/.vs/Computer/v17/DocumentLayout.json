@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\6_labor\\Computer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6C13B6-A184-4E94-AEA6-6348B331394E}|Computer\\Computer.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\6_labor\\Computer\\Computer\\computer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0B6C13B6-A184-4E94-AEA6-6348B331394E}|Computer\\Computer.vcxproj|solutionrelative:Computer\\computer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6C13B6-A184-4E94-AEA6-6348B331394E}|Computer\\Computer.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\6_labor\\Computer\\Computer\\computer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0B6C13B6-A184-4E94-AEA6-6348B331394E}|Computer\\Computer.vcxproj|solutionrelative:Computer\\computer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6C13B6-A184-4E94-AEA6-6348B331394E}|Computer\\Computer.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\6_labor\\Computer\\Computer\\computerTest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0B6C13B6-A184-4E94-AEA6-6348B331394E}|Computer\\Computer.vcxproj|solutionrelative:Computer\\computerTest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "computer.h",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\6_labor\\Computer\\Computer\\computer.h",
+              "RelativeDocumentMoniker": "Computer\\computer.h",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\6_labor\\Computer\\Computer\\computer.h",
+              "RelativeToolTip": "Computer\\computer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-25T18:11:18.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "computerTest.cpp",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\6_labor\\Computer\\Computer\\computerTest.cpp",
+              "RelativeDocumentMoniker": "Computer\\computerTest.cpp",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\6_labor\\Computer\\Computer\\computerTest.cpp",
+              "RelativeToolTip": "Computer\\computerTest.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-25T18:11:15.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "computer.cpp",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\6_labor\\Computer\\Computer\\computer.cpp",
+              "RelativeDocumentMoniker": "Computer\\computer.cpp",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\6_labor\\Computer\\Computer\\computer.cpp",
+              "RelativeToolTip": "Computer\\computer.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-25T18:11:14.192Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

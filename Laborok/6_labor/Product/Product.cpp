@@ -24,7 +24,7 @@ unsigned Product::totalProducts = 0;
         return MAX_PRICE;
     }
 
-    const int Product::getId() const
+    const int Product::getId() const 
     {
         return id;
     }

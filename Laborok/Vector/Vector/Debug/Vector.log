@@ -1,5 +1,0 @@
-﻿  vector.cpp
-C:\User\07_LAB_HAL_KOD\07_LAB_HAL_KOD\Vector\Vector\vector.cpp(37,9): error C2065: 'cerr': undeclared identifier
-C:\User\07_LAB_HAL_KOD\07_LAB_HAL_KOD\Vector\Vector\vector.cpp(106,23): warning C4018: '<': signed/unsigned mismatch
-  vectorTest.cpp
-  Generating Code...
