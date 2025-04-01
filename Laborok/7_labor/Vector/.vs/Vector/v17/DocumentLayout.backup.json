@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{7136C2D0-5C72-44CD-9ED2-C496725C5050}|Vector\\Vector.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\7_labor\\Vector\\Vector\\vector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7136C2D0-5C72-44CD-9ED2-C496725C5050}|Vector\\Vector.vcxproj|solutionrelative:Vector\\vector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7136C2D0-5C72-44CD-9ED2-C496725C5050}|Vector\\Vector.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\7_labor\\Vector\\Vector\\vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7136C2D0-5C72-44CD-9ED2-C496725C5050}|Vector\\Vector.vcxproj|solutionrelative:Vector\\vector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7136C2D0-5C72-44CD-9ED2-C496725C5050}|Vector\\Vector.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\7_labor\\Vector\\Vector\\vectorTest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7136C2D0-5C72-44CD-9ED2-C496725C5050}|Vector\\Vector.vcxproj|solutionrelative:Vector\\vectorTest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "vector.h",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\7_labor\\Vector\\Vector\\vector.h",
+              "RelativeDocumentMoniker": "Vector\\vector.h",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\7_labor\\Vector\\Vector\\vector.h",
+              "RelativeToolTip": "Vector\\vector.h",
+              "ViewState": "AgIAABwAAAAAAAAAAAAswE4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-29T22:16:33.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "vectorTest.cpp",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\7_labor\\Vector\\Vector\\vectorTest.cpp",
+              "RelativeDocumentMoniker": "Vector\\vectorTest.cpp",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\7_labor\\Vector\\Vector\\vectorTest.cpp",
+              "RelativeToolTip": "Vector\\vectorTest.cpp",
+              "ViewState": "AgIAABYAAAAAAAAAAAAswEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-29T22:16:22.047Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +58,7 @@
               "RelativeDocumentMoniker": "Vector\\vector.cpp",
               "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\7_labor\\Vector\\Vector\\vector.cpp",
               "RelativeToolTip": "Vector\\vector.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-28T20:14:54.617Z",
               "EditorCaption": ""
