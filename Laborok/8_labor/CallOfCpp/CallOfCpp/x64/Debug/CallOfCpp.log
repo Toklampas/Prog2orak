@@ -1,0 +1,8 @@
+﻿  callOfCppTest.cpp
+  knife.cpp
+C:\Users\adama\Documents\GitHub\Prog2orak\Laborok\8_labor\CallOfCpp\CallOfCpp\knife.cpp(18,12): warning C4244: '*=': conversion from 'double' to 'unsigned int', possible loss of data
+  pistol.cpp
+  railgun.cpp
+  weapon.cpp
+  Generating Code...
+  CallOfCpp.vcxproj -> C:\Users\adama\Documents\GitHub\Prog2orak\Laborok\8_labor\CallOfCpp\x64\Debug\CallOfCpp.exe

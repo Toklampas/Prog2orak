@@ -1,31 +1,34 @@
 #include "weapon.h"
+#include <sstream>
+using namespace std;
 
-Weapon::Weapon() : damage(10)
-{
-}
-
-void Weapon::setDamage(unsigned pDamage)
-{
-	if (pDamage >= 0 && pDamage <= 100)
-		damage = pDamage;
-	else if (pDamage < 0)
-		damage = 0;
-	else
-		damage = 100;
-}
+Weapon::Weapon(unsigned pdamage) : damage(pdamage)
+{}
 
 unsigned Weapon::getDamage() const
 {
 	return damage;
 }
 
-unsigned Weapon::use()
+void Weapon::setDamage(unsigned pdamage)
 {
-	if (damage > 0)
-		damage--;
-	return damage;
+	if (pdamage > 100)
+		damage = 100;
+	else if (pdamage < 0)
+		damage = 0;
+	else
+		damage = pdamage;
 }
 
-void Weapon::toString() const
+string Weapon::toString()
 {
+	stringstream ss;
+	ss << "Weapon; damage can be caused=" << getDamage();
+	return ss.str();
 }
+
+unsigned Weapon::use()
+{
+	return --damage;
+}
+
