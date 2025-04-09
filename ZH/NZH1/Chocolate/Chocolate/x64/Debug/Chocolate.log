@@ -1,0 +1,6 @@
+﻿  Chocolate.cpp
+C:\Users\adama\Documents\GitHub\Prog2orak\ZH\NZH1\Chocolate\Chocolate.cpp(92,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\adama\Documents\GitHub\Prog2orak\ZH\NZH1\Chocolate\Chocolate.cpp(101,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\adama\Documents\GitHub\Prog2orak\ZH\NZH1\Chocolate\Chocolate.cpp(114,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\adama\Documents\GitHub\Prog2orak\ZH\NZH1\Chocolate\Chocolate.cpp(117,9): warning C4018: '<': signed/unsigned mismatch
+  Chocolate.vcxproj -> C:\Users\adama\Documents\GitHub\Prog2orak\ZH\NZH1\Chocolate\x64\Debug\Chocolate.exe
