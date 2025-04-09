@@ -78,5 +78,6 @@ int main() {
 
 	//TODO ne legyen memóriaszivárgás
 
+	getchar();
 	return 0;
 }

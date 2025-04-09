@@ -7,7 +7,7 @@ class Player
 	unsigned health; // életerő: [0;100]
 	unsigned weaponsCount; // fegyverek aktuális száma: [0;maxWeaponsCount]
 	const unsigned maxWeaponsCount; // fegyverek maximális száma: [0:UINT_MAX]
-	
+
 	// Megjegyzés: két ember birtokolhatja ugyanazt a fegyvert
 	Weapon** weapons; // fegyverekre mutató heterogén tömb
 

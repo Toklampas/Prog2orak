@@ -1,9 +1,2 @@
 ﻿  callOfCppTest.cpp
-  knife.cpp
-C:\Users\adama\Documents\GitHub\Prog2orak\Laborok\9_labor\CallOfCpp_02\CallOfCpp_OKT\knife.cpp(15,12): warning C4244: '*=': conversion from 'double' to 'unsigned int', possible loss of data
-  pistol.cpp
-  player.cpp
-C:\Users\adama\Documents\GitHub\Prog2orak\Laborok\9_labor\CallOfCpp_02\CallOfCpp_OKT\player.cpp(213,6): error C2065: 'isEnemyAliveBeforeAttack': undeclared identifier
-  railgun.cpp
-  weapon.cpp
-  Generating Code...
+  CallOfCpp_OKT.vcxproj -> C:\Users\adama\Documents\GitHub\Prog2orak\Laborok\9_labor\CallOfCpp_02\x64\Debug\CallOfCpp_OKT.exe
