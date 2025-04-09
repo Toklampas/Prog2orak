@@ -4,7 +4,7 @@ using namespace std;
 
 Weapon::Weapon(unsigned damage = 10): damage(damage) {}
 
-Weapon::~Weapon(){}
+Weapon::~Weapon() {}
 
 unsigned Weapon::getDamage() const
 {

@@ -55,7 +55,7 @@ int main() {
 	\***************************************************************************/
 
 	cout << "Player#2 drops selected weapon:" << endl;
-	//TODO p2 dobja el a kiválasztott fegyvert
+	p2.dropSelected();
 
 
 	printPlayers(p1, p2, enemy);
