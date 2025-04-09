@@ -1,0 +1,29 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build project",
+            "type": "shell",
+            "windows" : {
+                "command": "C:\\Program Files\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"-Wall",
+				"*.cpp",
+				"-o",
+				"prog.exe"
+			],
+            },
+            "linux" : {
+                "command": "g++ -g -Wall *.cpp -o prog"
+            },
+            "problemMatcher": "$gcc",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

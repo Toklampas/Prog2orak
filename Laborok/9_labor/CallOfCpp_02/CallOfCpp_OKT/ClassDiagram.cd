@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Knife" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAALABAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>knife.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pistol" Collapsed="true">
+    <Position X="2" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAgAAEAAAAABgBAAAAIACAABAAIAAAAAAA=</HashCode>
+      <FileName>pistol.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player">
+    <Position X="5.25" Y="0.5" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAgAAAQAAAAAAAABAAAAABQEAADAIAEEEUFAABg=</HashCode>
+      <FileName>player.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="weapons" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Railgun" Collapsed="true">
+    <Position X="3.75" Y="3.75" Width="1.25" />
+    <InheritanceLine Type="Weapon" FixedToPoint="true">
+      <Path>
+        <Point X="2.75" Y="3.017" />
+        <Point X="2.75" Y="3.375" />
+        <Point X="4.312" Y="3.375" />
+        <Point X="4.312" Y="3.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAQAAAAABAAQAAAAAAAABAAAAAQAAAA=</HashCode>
+      <FileName>railgun.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Weapon">
+    <Position X="1.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BIAACAAAAAAAgAAAAAAABAAAAAAAAAgABAAAAAAAAAA=</HashCode>
+      <FileName>weapon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
