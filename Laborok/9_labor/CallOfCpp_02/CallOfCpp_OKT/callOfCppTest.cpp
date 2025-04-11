@@ -17,12 +17,21 @@ int main() {
 	// A Weapon legyen absztrakt osztály (tehát ne lehessen példányosítani).
 	// Weapon excalibur(100);
 
+	Weapon* weapon_array[3];
+
+	weapon_array[0] = new Railgun();
+	weapon_array[1] = new Pistol();
+	weapon_array[2] = new Knife();
+	
 	Player p1("Player#1");
-	Railgun railgun1;
-	Player p2("Player#2", 50, 5, &railgun1);
+	Player p2("Player#2", 50, 5, weapon_array[0]);
 	Player enemy("Enemy#1");
 
-	//TODO p1 kapjon egy pisztolyt és egy kést
+	// p1 kapjon egy pisztolyt és egy kést
+	Pistol pistol1;
+	Knife knife1;
+	p1.equipWeapon(weapon_array[1]);
+	p1.equipWeapon(weapon_array[2]);
 
 	cout << "Init state" << endl;
 	printPlayers(p1, p2, enemy);
@@ -33,8 +42,8 @@ int main() {
 	\***************************************************************************/
 
 	cout << "Player#1 switches to next weapon:" << endl;
-	//TODO p1 váltson a következő fegyverre
-
+	// p1 váltson a következő fegyverre
+	p1.switchToNextWeapon();
 
 	printPlayers(p1, p2, enemy);
 	/***************************ELVÁRT KIMENET**********************************\
@@ -44,8 +53,8 @@ int main() {
 	\***************************************************************************/
 
 	cout << "Player#2 attacks Enemy#1:" << endl;
-	//TODO p2 támadja meg az enemy-t
-
+	// p2 támadja meg az enemy-t
+	p2.attack(enemy);
 
 	printPlayers(p1, p2, enemy);
 	/***************************ELVÁRT KIMENET**********************************\
@@ -55,8 +64,8 @@ int main() {
 	\***************************************************************************/
 
 	cout << "Player#2 drops selected weapon:" << endl;
-	p2.dropSelected();
-
+	// p2 dobja el a kiválasztott fegyvert
+    p2.dropSelected();
 
 	printPlayers(p1, p2, enemy);
 	/***************************ELVÁRT KIMENET**********************************\
@@ -66,7 +75,8 @@ int main() {
 	\***************************************************************************/
 
 	cout << "Player#2 attacks Enemy#1:" << endl;
-	//TODO p1 támadja meg az enemy-t
+	// p1 támadja meg az enemy-t
+	p1.attack(enemy);
 
 	printPlayers(p1, p2, enemy);
 	/***************************ELVÁRT KIMENET**********************************\
@@ -76,8 +86,10 @@ int main() {
 	| Enemy#1 is not alive; health: 0; has 0 weapon(s); selected no weapon      |
 	\***************************************************************************/
 
-	//TODO ne legyen memóriaszivárgás
+	// ne legyen memóriaszivárgás
+	while (p1.dropSelected());
+	while (p2.dropSelected());
+	while (enemy.dropSelected());
 
-	getchar();
 	return 0;
 }

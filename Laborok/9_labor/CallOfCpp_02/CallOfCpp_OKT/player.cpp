@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Player::Player(string name, unsigned health, unsigned maxWeaponsCount, Weapon* weapon) : name(name), health(health), weaponsCount(0), maxWeaponsCount(maxWeaponsCount), weapons(nullptr), selectedWeaponIndex(0)
+Player::Player(string name, unsigned health, unsigned maxWeaponsCount, Weapon* weapon): name(name), health(health), weaponsCount(0), maxWeaponsCount(maxWeaponsCount), weapons(nullptr), selectedWeaponIndex(0)
 {
 	// 1. A paraméterül megkapott fegyvert felvesszük
 	equipWeapon(weapon);
@@ -58,7 +58,7 @@ bool Player::equipWeapon(Weapon* weapon)
 	//     a) nincs életben
 	//     b) nullptr-t kapott paraméterként
 	//     c) túl sok fegyver van nála
-	if (!isAlive() || !weapon || weaponsCount == maxWeaponsCount)
+	if (!isAlive() || !weapon || weaponsCount==maxWeaponsCount)
 		return false;
 
 	// 2. Ha már nála van az adott fegyver, ne vegye fel megunsigned
@@ -69,7 +69,7 @@ bool Player::equipWeapon(Weapon* weapon)
 		}
 
 	// 3. Eggyel nagyobb helyet foglalunk az új fegyvernek
-	Weapon** tempWeapons = new Weapon * [weaponsCount + 1];
+	Weapon** tempWeapons = new Weapon*[weaponsCount + 1];
 
 	// 4. A meglévő fegyvereket átmásoljuk az ideiglenes helyre
 	for (unsigned i = 0; i < weaponsCount; i++)
@@ -100,7 +100,6 @@ bool Player::dropSelected()
 		return false;
 
 	// 2. Eldobjuk (felszabadítjuk) a kiválasztott fegyvert
-	//if(weapons[selectedWeaponIndex]!=nullptr)
 	delete weapons[selectedWeaponIndex];
 
 	// 3. Ideigneles Weapon** tömb, ami nem mutat sehova
@@ -110,19 +109,19 @@ bool Player::dropSelected()
 	if (weaponsCount - 1) {
 
 		// 4.1.1. Ideiglenes tömböt eggyel kisebb méretű tömbre irányítjuk
-		tempWeapons = new Weapon * [weaponsCount - 1];
+		tempWeapons = new Weapon*[weaponsCount-1];
 
 		// 4.1.2. Átmásolunk mindent, ami nem a régi fegyver
 		for (unsigned i = 0, j = 0; i < weaponsCount + 1; i++)
 			if (i != selectedWeaponIndex)
 				tempWeapons[j++] = weapons[i];
-
+		
 	}
 
 	// 5. A lista elején lévő fegyverre mutatuk (0).
 	//    Akkor is nullára mutatunk, ha nincs fegyverünk, mert úgy is csak akkor fogjuk olvasni, ha a weaponsCount>0.
 	selectedWeaponIndex = 0;
-
+	
 	// 6. Csökkentjük a fegyverek számát
 	weaponsCount--;
 
@@ -167,7 +166,7 @@ bool Player::switchToPreviousWeapon()
 
 	// 2. Ha a lista elején vagyunk, ugrunk a végére
 	if (!selectedWeaponIndex) {
-		selectedWeaponIndex = weaponsCount - 1;
+		selectedWeaponIndex = weaponsCount-1;
 		return false;
 	}
 
@@ -196,29 +195,26 @@ bool Player::takeDamage(unsigned damage)
 	return true;
 }
 
-bool Player::attack(Player& enemy) const
-{
-	// 1. Nem tudunk támadni, ha
-	//    a) már nem élünk
-	//    b) nincs fegyverünk
-	if (!isAlive() || getWeaponsCount() == 0)
-		return false;
+bool Player::attack(Player& enemy) const  
+{  
+   // 1. Nem tudunk támadni, ha  
+   //    a) már nem élünk  
+   //    b) nincs fegyverünk  
+   if (!isAlive() || !getSelectedWeapon())  
+       return false;  
 
-	// 2. Eltároljuk, hogy az enemy élt-e még a támadás elején
-	bool isEnemyAliveBeforeAttack = enemy.isAlive();
+   // 2. Eltároljuk, hogy az enemy élt-e még a támadás elején  
+   bool isEnemyAliveBeforeAttack = enemy.isAlive();  
 
-	// 3. Megsebezzük az enemy-t
-	enemy.takeDamage(getSelectedWeapon()->use());
+   // 3. Megsebezzük az enemy-t a kiválasztott fegyver sebzésével  
+   enemy.takeDamage(getSelectedWeapon()->use());  
 
-	// 4. Ha élt az elején, de a végén nem, végzetes csapást mértünk rá
-	if (isEnemyAliveBeforeAttack && !enemy.isAlive())
-		cout << name << " killed " << enemy.getName() << " with a(n) " << getSelectedWeapon() << endl;
+   // 4. Ha élt az elején, de a végén nem, végzetes csapást mértünk rá  
+   if (isEnemyAliveBeforeAttack && !enemy.isAlive())  
+       cout << name << " killed " << enemy.getName() << " with a(n) " << getSelectedWeapon()/*->toString()*/ << endl;
 
-	// 5. Meg tudtuk támadni a másik játékost, igazzal térünk vissza
-	if (isEnemyAliveBeforeAttack)
-		return true;
-	else
-		return false;
+   // 5. Meg tudtuk támadni a másik játékost, igazzal térünk vissza  
+   return true;  
 }
 
 bool Player::isAlive() const
@@ -229,12 +225,7 @@ bool Player::isAlive() const
 
 ostream& operator<<(ostream& os, const Player& right)
 {
-	string str;
-	if (right.getSelectedWeapon() == nullptr)
-		str = "no weapon";
-	else
-		str = right.getSelectedWeapon()->toString();
 	// 1. A kimenet legyen ehhez hasonló: <Játékos neve> is [not] alive; health: <szám>; has <fegyverek száma> weapon(s); <selected no weapon|fegyver kiírása>
-	os << right.getName() << " is" << (right.isAlive() ? "" : " not") << " alive; health: " << right.getHealth() << "; has " << right.getWeaponsCount() << " weapon(s); selected " << str;
+	os << right.getName() << " is" << (right.isAlive() ? "" : " not") << " alive; health: " << right.getHealth() << "; has " << right.getWeaponsCount() << " weapon(s); selected " << right.getSelectedWeapon();
 	return os;
 }

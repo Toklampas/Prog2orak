@@ -3,46 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\crt\\src\\vcruntime\\debugger_jmc.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\weapon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\weapon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\weapon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\weapon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\railgun.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\railgun.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\pistol.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\pistol.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\knife.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\knife.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\knife.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\knife.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\callOfCppTest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\callOfCppTest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\crt\\src\\vcruntime\\delete_scalar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\weapon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\weapon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\callOfCppTest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\callOfCppTest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\railgun.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\railgun.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\knife.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\knife.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\pistol.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\pistol.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\weapon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\weapon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\knife.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\knife.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\pistol.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\pistol.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\railgun.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\railgun.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,76 +54,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "debugger_jmc.c",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\crt\\src\\vcruntime\\debugger_jmc.c",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\crt\\src\\vcruntime\\debugger_jmc.c",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\crt\\src\\vcruntime\\debugger_jmc.c",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\crt\\src\\vcruntime\\debugger_jmc.c",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAWwBgAAAByAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-04-09T16:50:56.344Z",
-              "EditorCaption": ""
+              "DocumentIndex": 1,
+              "Title": "player.cpp",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\player.cpp",
+              "RelativeDocumentMoniker": "CallOfCpp_OKT\\player.cpp",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\player.cpp",
+              "RelativeToolTip": "CallOfCpp_OKT\\player.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-11T14:57:16.473Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "delete_scalar.cpp",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\crt\\src\\vcruntime\\delete_scalar.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\crt\\src\\vcruntime\\delete_scalar.cpp",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\crt\\src\\vcruntime\\delete_scalar.cpp",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\crt\\src\\vcruntime\\delete_scalar.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAWwCEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "weapon.cpp",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\weapon.cpp",
+              "RelativeDocumentMoniker": "CallOfCpp_OKT\\weapon.cpp",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\weapon.cpp",
+              "RelativeToolTip": "CallOfCpp_OKT\\weapon.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-09T16:47:14.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T14:57:18.161Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "railgun.h",
-              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\railgun.h",
-              "RelativeDocumentMoniker": "CallOfCpp_OKT\\railgun.h",
-              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\railgun.h",
-              "RelativeToolTip": "CallOfCpp_OKT\\railgun.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-09T16:42:33.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "pistol.h",
-              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\pistol.h",
-              "RelativeDocumentMoniker": "CallOfCpp_OKT\\pistol.h",
-              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\pistol.h",
-              "RelativeToolTip": "CallOfCpp_OKT\\pistol.h",
+              "Title": "railgun.cpp",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\railgun.cpp",
+              "RelativeDocumentMoniker": "CallOfCpp_OKT\\railgun.cpp",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\railgun.cpp",
+              "RelativeToolTip": "CallOfCpp_OKT\\railgun.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-09T16:42:31.944Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-11T14:57:17.265Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "knife.h",
-              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\knife.h",
-              "RelativeDocumentMoniker": "CallOfCpp_OKT\\knife.h",
-              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\knife.h",
-              "RelativeToolTip": "CallOfCpp_OKT\\knife.h",
+              "Title": "pistol.cpp",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\pistol.cpp",
+              "RelativeDocumentMoniker": "CallOfCpp_OKT\\pistol.cpp",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\pistol.cpp",
+              "RelativeToolTip": "CallOfCpp_OKT\\pistol.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-09T16:42:30.444Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-11T14:57:15.705Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "knife.cpp",
               "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\knife.cpp",
               "RelativeDocumentMoniker": "CallOfCpp_OKT\\knife.cpp",
@@ -129,34 +114,44 @@
               "RelativeToolTip": "CallOfCpp_OKT\\knife.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-09T16:42:28.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T14:57:15.248Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "weapon.cpp",
-              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\weapon.cpp",
-              "RelativeDocumentMoniker": "CallOfCpp_OKT\\weapon.cpp",
-              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\weapon.cpp",
-              "RelativeToolTip": "CallOfCpp_OKT\\weapon.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "callOfCppTest.cpp",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\callOfCppTest.cpp",
+              "RelativeDocumentMoniker": "CallOfCpp_OKT\\callOfCppTest.cpp",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\callOfCppTest.cpp",
+              "RelativeToolTip": "CallOfCpp_OKT\\callOfCppTest.cpp",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAABMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-09T16:42:22.217Z",
+              "WhenOpened": "2025-04-11T14:57:14.787Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "weapon.h",
               "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\weapon.h",
               "RelativeDocumentMoniker": "CallOfCpp_OKT\\weapon.h",
               "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\weapon.h",
               "RelativeToolTip": "CallOfCpp_OKT\\weapon.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-09T16:42:13.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T14:57:13.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "railgun.h",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\railgun.h",
+              "RelativeDocumentMoniker": "CallOfCpp_OKT\\railgun.h",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\railgun.h",
+              "RelativeToolTip": "CallOfCpp_OKT\\railgun.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-11T14:57:13.16Z"
             },
             {
               "$type": "Document",
@@ -166,36 +161,33 @@
               "RelativeDocumentMoniker": "CallOfCpp_OKT\\player.h",
               "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\player.h",
               "RelativeToolTip": "CallOfCpp_OKT\\player.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACIAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-09T16:41:16.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T14:57:12.721Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "callOfCppTest.cpp",
-              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\callOfCppTest.cpp",
-              "RelativeDocumentMoniker": "CallOfCpp_OKT\\callOfCppTest.cpp",
-              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\callOfCppTest.cpp",
-              "RelativeToolTip": "CallOfCpp_OKT\\callOfCppTest.cpp",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-09T16:34:45.621Z",
-              "EditorCaption": ""
+              "DocumentIndex": 9,
+              "Title": "pistol.h",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\pistol.h",
+              "RelativeDocumentMoniker": "CallOfCpp_OKT\\pistol.h",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\pistol.h",
+              "RelativeToolTip": "CallOfCpp_OKT\\pistol.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-11T14:57:12.19Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "player.cpp",
-              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\player.cpp",
-              "RelativeDocumentMoniker": "CallOfCpp_OKT\\player.cpp",
-              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\player.cpp",
-              "RelativeToolTip": "CallOfCpp_OKT\\player.cpp",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAUwGcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-09T16:34:22.638Z",
-              "EditorCaption": ""
+              "Title": "knife.h",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\knife.h",
+              "RelativeDocumentMoniker": "CallOfCpp_OKT\\knife.h",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\9_labor\\CallOfCpp_02\\CallOfCpp_OKT\\knife.h",
+              "RelativeToolTip": "CallOfCpp_OKT\\knife.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-11T14:57:09.177Z"
             }
           ]
         }
