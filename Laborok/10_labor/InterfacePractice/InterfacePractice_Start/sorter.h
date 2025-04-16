@@ -3,6 +3,7 @@
 
 class Sorter
 {
+public:
 	static void bubbleSort(Comparable** tomb, unsigned meret);
 };
 
