@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\09_labor\\CallOfCpp_02\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\09_labor\\CallOfCpp_02\\CallOfCpp_OKT\\ClassDiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\ClassDiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\09_labor\\CallOfCpp_02\\CallOfCpp_OKT\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F902278E-0D85-4504-881C-E728EBD15BE7}|CallOfCpp_OKT\\CallOfCpp_OKT.vcxproj|solutionrelative:CallOfCpp_OKT\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClassDiagram.cd",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\09_labor\\CallOfCpp_02\\CallOfCpp_OKT\\ClassDiagram.cd",
+              "RelativeDocumentMoniker": "CallOfCpp_OKT\\ClassDiagram.cd",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\09_labor\\CallOfCpp_02\\CallOfCpp_OKT\\ClassDiagram.cd",
+              "RelativeToolTip": "CallOfCpp_OKT\\ClassDiagram.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2025-04-11T17:51:40.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "player.cpp",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\09_labor\\CallOfCpp_02\\CallOfCpp_OKT\\player.cpp",
+              "RelativeDocumentMoniker": "CallOfCpp_OKT\\player.cpp",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\09_labor\\CallOfCpp_02\\CallOfCpp_OKT\\player.cpp",
+              "RelativeToolTip": "CallOfCpp_OKT\\player.cpp",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-11T17:51:12.438Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
