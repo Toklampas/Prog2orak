@@ -47,7 +47,7 @@ double Person::getWeight() const
 void Person::serialize(ostream& os) const
 {
 	// unsigned char -> int, különben karakterként írja ki
-	os << (int)age << ';' << height << ';' << weight << endl;
+	os << (int)age << '\t' << height << '\t' << weight << endl;
 }
 
 void Person::deserialize(istream& is)
@@ -58,16 +58,19 @@ void Person::deserialize(istream& is)
 	char c;
 
 	is >> age;
-	is >> c;
-	if (c != ';')
-		is.clear(ios::failbit);
+	//is >> c;
+	//if (c != '\t')
+	//	is.clear(ios::failbit);
 
 	is >> height;
-	is >> c;
-	if (c != ';')
-		is.clear(ios::failbit);
+	//is >> c;
+	//if (c != '\t')
+	//	is.clear(ios::failbit);
 
 	is >> weight;
+	//is >> c;
+	//if (c != '\n')
+	//	is.clear(ios::failbit);
 
 	if (is)
 	{

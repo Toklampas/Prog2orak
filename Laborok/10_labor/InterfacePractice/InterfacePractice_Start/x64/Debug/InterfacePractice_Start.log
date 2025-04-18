@@ -1,8 +1,2 @@
-﻿  Dog.cpp
-  interfaceTest.cpp
-C:\User\10_LAB_HAL_KOD\10_LAB_HAL_KOD\InterfacePractice\InterfacePractice_Start\interfaceTest.cpp(33,10): error C2664: 'void Sorter::bubbleSort(Comparable **,unsigned int)': cannot convert argument 1 from 'Comparable *' to 'Comparable **'
-C:\User\10_LAB_HAL_KOD\10_LAB_HAL_KOD\InterfacePractice\InterfacePractice_Start\interfaceTest.cpp(33,34): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
-C:\User\10_LAB_HAL_KOD\10_LAB_HAL_KOD\InterfacePractice\InterfacePractice_Start\sorter.h(6,14): message : see declaration of 'Sorter::bubbleSort'
-C:\User\10_LAB_HAL_KOD\10_LAB_HAL_KOD\InterfacePractice\InterfacePractice_Start\interfaceTest.cpp(33,10): message : while trying to match the argument list '(Comparable *, int)'
-  sorter.cpp
-  Generating Code...
+﻿  interfaceTest.cpp
+  InterfacePractice_Start.vcxproj -> C:\Users\adama\Documents\GitHub\Prog2orak\Laborok\10_labor\InterfacePractice\x64\Debug\InterfacePractice_Start.exe

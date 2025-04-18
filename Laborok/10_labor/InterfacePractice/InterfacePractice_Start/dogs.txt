@@ -1,0 +1,4 @@
+2	Epsilon
+9	Beta
+10	Delta
+12	Gamma

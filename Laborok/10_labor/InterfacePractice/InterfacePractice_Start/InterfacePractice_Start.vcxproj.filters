@@ -30,7 +30,7 @@
     <ClInclude Include="serializable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Dog.h">
+    <ClInclude Include="dog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="sorter.h">
@@ -50,7 +50,7 @@
     <ClCompile Include="saver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Dog.cpp">
+    <ClCompile Include="dog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="sorter.cpp">

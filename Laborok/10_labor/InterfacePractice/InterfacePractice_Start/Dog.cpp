@@ -1,4 +1,4 @@
-#include "Dog.h"
+#include "dog.h"
 
 using namespace std;
 
@@ -6,23 +6,43 @@ Dog::Dog(string name, unsigned char age) : name(name), age(age)
 {
 }
 
-void Dog::serialize(ostream& os) const
+string Dog::getName() const
 {
-	os << name << ';' << (int)age << std::endl;
+	return name;
 }
 
-void Dog::deserialize(std::istream& is)
+unsigned char Dog::getAge() const
+{
+	return age;
+}
+
+void Dog::setName(const string& pName)
+{
+	name = pName;
+}
+
+void Dog::setAge(unsigned char pAge)
+{
+	age = pAge;
+}
+
+void Dog::serialize(ostream& os) const
+{
+	os << (int)age << '\t' << name << std::endl;
+}
+
+void Dog::deserialize(istream& is)
 {
 	string name;
 	int age;
 	char c;
 
-	is >> name;
-	is >> c;
-	if (c != ';')
-		is.clear(ios::failbit);
-
 	is >> age;
+	//is >> c;
+	//if (c != '\t')
+	//	is.clear(ios::failbit);
+
+	is >> name;
 
 	if (is)
 	{

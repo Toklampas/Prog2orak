@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="comparable.h" />
-    <ClInclude Include="Dog.h" />
+    <ClInclude Include="dog.h" />
     <ClInclude Include="loader.h" />
     <ClInclude Include="person.h" />
     <ClInclude Include="saver.h" />
@@ -136,7 +136,7 @@
     <ClInclude Include="sorter.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Dog.cpp" />
+    <ClCompile Include="dog.cpp" />
     <ClCompile Include="interfaceTest.cpp" />
     <ClCompile Include="loader.cpp" />
     <ClCompile Include="person.cpp" />

@@ -3,20 +3,28 @@
 #include "comparable.h"
 #include "serializable.h"
 
+using namespace std;
+
 class Dog : public Comparable, public Serializable
 {
-	std::string name;
+	string name;
 	unsigned char age;
 
 public:
-	Dog(std::string name, unsigned char age);
+	Dog(string name, unsigned char age);
 
-	void serialize(std::ostream& os) const;
-	void deserialize(std::istream& is);
+	string getName() const;
+	unsigned char getAge() const;
+
+	void setName(const string& newName);
+	void setAge(unsigned char newAge);
+
+	void serialize(ostream& os) const;
+	void deserialize(istream& is);
 
 	bool operator==(const Comparable& other) const;
 	bool operator<(const Comparable& other) const;
 };
 
-std::ostream& operator<<(std::ostream& os, const Dog& right);
+ostream& operator<<(ostream& os, const Dog& right);
 
