@@ -2,11 +2,11 @@
 
 class Node {
 private:
-    char letter;
-    Node* down;
-    Node* next;
-    int count;
-    int code;
+	char letter; // character stored in the node
+	Node* down; // pointer to the next level (down)
+	Node* next; // pointer to the next node at the same level
+    int count; 
+	int code; // code assigned to the word ending at this node
 
 public:
     Node(char ch);
@@ -18,6 +18,7 @@ public:
     int getCount() const;
     int getCode() const;
     Node*& getDownRef();
+    Node*& getNextRef();
 
     void setDown(Node* ptr);
     void setNext(Node* ptr);

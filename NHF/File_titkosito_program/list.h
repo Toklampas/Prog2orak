@@ -7,16 +7,14 @@ private:
     Node* root;
     int nextCode;
 
-    void insertWord(Node*& node, const std::string& word, size_t idx, int& codeAssigned);
     void printWords(Node* node, std::string& path, std::ofstream& out) const;
-    void findWordCode(Node* node, const std::string& word, size_t idx, int& code) const;
     void freeNodes(Node* node);
 
 public:
     List();
     ~List();
 
-    int insert(const std::string& word);
+    void insert(const std::string& word);
     void printToFile(const std::string& filename) const;
     int getWordCode(const std::string& word) const;
 

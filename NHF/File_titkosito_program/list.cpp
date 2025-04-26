@@ -17,37 +17,68 @@ void List::freeNodes(Node* node) {
     }
 }
 
-void List::insertWord(Node*& node, const std::string& word, size_t idx, int& codeAssigned) {
-    if (idx == word.length()) {
-        if (!node) node = new Node('\0');
-        node->incrementCount();
-        if (node->getCode() == 0) node->setCode(nextCode++);
-        codeAssigned = node->getCode();
+// Bemeneti fájl feldolgozása, a szavak kisbetûsítése és beszúrása a fába
+void List::buildFromFile(const std::string& filename)
+{
+    std::ifstream inputFile(filename);
+    if (!inputFile)
+    {
+        std::cerr << "Nem sikerült megnyitni: " << filename << "\n";
         return;
     }
-    char ch = word[idx];
-    if (!node) node = new Node(ch);
-    Node* cur = node;
-    Node* prev = nullptr;
-    while (cur && cur->getLetter() != ch) {
-        prev = cur;
-        cur = cur->getNext();
-    }
-    if (!cur) {
-        cur = new Node(ch);
-        prev->setNext(cur);
-    }
 
-    if (!cur->getDown()) {
-        cur->setDown(new Node('\0'));
+    std::string word;
+    char ch;
+
+    while (inputFile.get(ch))
+    {
+        if (std::isalpha(ch))
+            word += std::tolower(ch);
+        else
+            if (!word.empty())
+            {
+                insert(word);
+                word.clear();
+            }
     }
-    insertWord(cur->getDownRef(), word, idx + 1, codeAssigned);
+    if (!word.empty())
+        insert(word);
 }
 
-int List::insert(const std::string& word) {
-    int code = 0;
-    insertWord(root, word, 0, code);
-    return code;
+void List::insert(const std::string& word) {
+    Node** node = &root;
+    unsigned currentCharIndex = 0;
+
+    while (currentCharIndex < word.size())
+    {
+        char currentChar = word[currentCharIndex];
+        
+		// Megkeressük, hogy a jelenlegi karakternek megfelelõ node létezik-e
+        while (*node && (*node)->getLetter() != currentChar)
+            node = &((*node)->getNextRef());
+		// Ha nem létezik, akkor létrehozzuk
+        if (!(*node))
+            *node = new Node(currentChar);
+        
+		// Megnézzük, hogy lefele létezik-e node, ha nem, létrehozunk egy placeholder node-ot (a szó jelenlegi végén)
+        if (!(*node)->getDown())
+            (*node)->setDown(new Node('\0'));
+
+		// Lejjebb lépünk a fában, hogy a következõ karaktert is be tudjuk illeszteni
+        node = &((*node)->getDownRef());
+        ++currentCharIndex;
+    }
+
+	//Ha nem létezik lezáró node, akkor létrehozzuk (ez jelöli a szó végét)
+    if (!(*node))
+        *node = new Node('\0');
+
+	// Növeljük a szó elõfordulásainak számát
+    (*node)->incrementCount();
+
+	// Ha a node-hoz még nem lett kód rendelve, akkor hozzárendelünk egyet
+    if ((*node)->getCode() == 0)
+        (*node)->setCode(nextCode++);
 }
 
 void List::printWords(Node* node, std::string& path, std::ofstream& out) const {
@@ -68,51 +99,38 @@ void List::printToFile(const std::string& filename) const {
     printWords(root, path, out);
 }
 
-void List::findWordCode(Node* node, const std::string& word, size_t idx, int& code) const {
-    if (!node) return;
-    char ch = (idx < word.length()) ? word[idx] : '\0';
-    Node* cur = node;
-    while (cur && cur->getLetter() != ch) {
-        cur = cur->getNext();
-    }
-    if (!cur) return;
-    if (idx == word.length()) {
-        code = cur->getCode();
-        return;
-    }
-    findWordCode(cur->getDown(), word, idx + 1, code);
-}
-
 int List::getWordCode(const std::string& word) const {
-    int code = 0;
-    findWordCode(root, word, 0, code);
-    return code;
+    Node* node = root;
+    size_t idx = 0;
+
+    while (node && idx < word.size()) {
+        char ch = word[idx];
+        Node* cur = node;
+
+        // Traverse siblings to find the matching character
+        while (cur && cur->getLetter() != ch) {
+            cur = cur->getNext();
+        }
+
+        // If no matching node is found, the word is not in the trie
+        if (!cur) {
+            return 0; // Return 0 to indicate the word doesn't exist
+        }
+
+        // Move down to the next level
+        node = cur->getDown();
+        ++idx;
+    }
+
+    // If we have traversed the entire word, check the final node's code
+    if (node && idx == word.size() && node->getCode() != 0) {
+        return node->getCode();
+    }
+
+    return 0; // Return 0 if the word is not found or has no code
 }
 
-// Szövegfájl beolvasása és trie feltöltése
-void List::buildFromFile(const std::string& filename) {
-    std::ifstream in(filename);
-    if (!in) {
-        std::cerr << "Nem sikerült megnyitni: " << filename << "\n";
-        return;
-    }
-    std::string word;
-    char ch;
-    while (in.get(ch)) {
-        if (std::isalpha(static_cast<unsigned char>(ch))) {
-            word += std::tolower(static_cast<unsigned char>(ch));
-        }
-        else {
-            if (!word.empty()) {
-                insert(word);
-                word.clear();
-            }
-        }
-    }
-    if (!word.empty()) {
-        insert(word);
-    }
-}
+
 
 // Kódolt szöveg elõállítása
 void List::encodeFile(const std::string& inputfile, const std::string& outfile) const {

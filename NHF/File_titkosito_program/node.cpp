@@ -11,6 +11,7 @@ int Node::getCount() const { return count; }
 int Node::getCode() const { return code; }
 
 Node*& Node::getDownRef() { return down; }
+Node*& Node::getNextRef() { return next; }
 
 void Node::setDown(Node* ptr) { down = ptr; }
 void Node::setNext(Node* ptr) { next = ptr; }
