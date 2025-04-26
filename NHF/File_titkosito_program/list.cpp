@@ -3,13 +3,13 @@
 #include <fstream>
 #include <iostream>
 
-Trie::Trie() : root(nullptr), nextCode(1) {}
+List::List() : root(nullptr), nextCode(1) {}
 
-Trie::~Trie() {
+List::~List() {
     freeNodes(root);
 }
 
-void Trie::freeNodes(Node* node) {
+void List::freeNodes(Node* node) {
     if (node) {
         freeNodes(node->getDown());
         freeNodes(node->getNext());
@@ -17,7 +17,7 @@ void Trie::freeNodes(Node* node) {
     }
 }
 
-void Trie::insertWord(Node*& node, const std::string& word, size_t idx, int& codeAssigned) {
+void List::insertWord(Node*& node, const std::string& word, size_t idx, int& codeAssigned) {
     if (idx == word.length()) {
         if (!node) node = new Node('\0');
         node->incrementCount();
@@ -44,13 +44,13 @@ void Trie::insertWord(Node*& node, const std::string& word, size_t idx, int& cod
     insertWord(cur->getDownRef(), word, idx + 1, codeAssigned);
 }
 
-int Trie::insert(const std::string& word) {
+int List::insert(const std::string& word) {
     int code = 0;
     insertWord(root, word, 0, code);
     return code;
 }
 
-void Trie::printWords(Node* node, std::string& path, std::ofstream& out) const {
+void List::printWords(Node* node, std::string& path, std::ofstream& out) const {
     if (!node) return;
     if (node->getLetter()) path.push_back(node->getLetter());
     if (node->getCount() > 0) {
@@ -61,14 +61,14 @@ void Trie::printWords(Node* node, std::string& path, std::ofstream& out) const {
     printWords(node->getNext(), path, out);
 }
 
-void Trie::printToFile(const std::string& filename) const {
+void List::printToFile(const std::string& filename) const {
     std::ofstream out(filename);
     std::string path;
     out << "id\tno\tword\n";
     printWords(root, path, out);
 }
 
-void Trie::findWordCode(Node* node, const std::string& word, size_t idx, int& code) const {
+void List::findWordCode(Node* node, const std::string& word, size_t idx, int& code) const {
     if (!node) return;
     char ch = (idx < word.length()) ? word[idx] : '\0';
     Node* cur = node;
@@ -83,14 +83,14 @@ void Trie::findWordCode(Node* node, const std::string& word, size_t idx, int& co
     findWordCode(cur->getDown(), word, idx + 1, code);
 }
 
-int Trie::getWordCode(const std::string& word) const {
+int List::getWordCode(const std::string& word) const {
     int code = 0;
     findWordCode(root, word, 0, code);
     return code;
 }
 
 // Szövegfájl beolvasása és trie feltöltése
-void Trie::buildFromFile(const std::string& filename) {
+void List::buildFromFile(const std::string& filename) {
     std::ifstream in(filename);
     if (!in) {
         std::cerr << "Nem sikerült megnyitni: " << filename << "\n";
@@ -115,7 +115,7 @@ void Trie::buildFromFile(const std::string& filename) {
 }
 
 // Kódolt szöveg elõállítása
-void Trie::encodeFile(const std::string& inputfile, const std::string& outfile) const {
+void List::encodeFile(const std::string& inputfile, const std::string& outfile) const {
     std::ifstream in(inputfile);
     std::ofstream out(outfile);
 

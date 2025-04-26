@@ -4,13 +4,13 @@
 #include <cctype>
 
 int main() {
-    Trie trie;
+    List list;
 
-    trie.buildFromFile("feladat.be");
+    list.buildFromFile("feladat.be");
 
-    trie.printToFile("feladat.ki");
+    list.printToFile("feladat.ki");
 
-    trie.encodeFile("feladat.be", "kodolt.ki");
+    list.encodeFile("feladat.be", "kodolt.ki");
 
 	std::cout << "A kódolt fájl elkészült: kodolt.ki\n";
     return 0;

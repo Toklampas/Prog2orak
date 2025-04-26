@@ -2,7 +2,7 @@
 #include "node.h"
 #include <string>
 
-class Trie {
+class List {
 private:
     Node* root;
     int nextCode;
@@ -13,8 +13,8 @@ private:
     void freeNodes(Node* node);
 
 public:
-    Trie();
-    ~Trie();
+    List();
+    ~List();
 
     int insert(const std::string& word);
     void printToFile(const std::string& filename) const;
