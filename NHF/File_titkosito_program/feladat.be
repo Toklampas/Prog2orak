@@ -1,1 +1,1 @@
-Ez egy pelda szoveg a feladat bemenetere. Nezzuk meg mukodik e a dolog! Es most irok meg egy mondatot, csak hogy ezt is teszteljem.
+Ez egy pelda szoveg a feladat bemenetere. Nezzuk meg mukodik e a dolog!

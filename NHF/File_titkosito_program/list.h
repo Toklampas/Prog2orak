@@ -14,7 +14,7 @@ public:
     List();
     ~List();
 
-    void insert(const std::string& word);
+    void insertWord(const std::string& word);
     void printToFile(const std::string& filename) const;
     int getWordCode(const std::string& word) const;
 

@@ -12,6 +12,6 @@ int main() {
 
     list.encodeFile("feladat.be", "kodolt.ki");
 
-	std::cout << "A kódolt fájl elkészült: kodolt.ki\n";
+	std::cout << "A kodolt fajl elkeszult: kodolt.ki\n";
     return 0;
 }
