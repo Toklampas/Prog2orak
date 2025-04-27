@@ -172,8 +172,10 @@ void List::encodeFile(const std::string& inputFileName, const std::string& outpu
     {
         if (std::isalpha(ch))
             word += std::tolower(ch);
-        else {
-            if (!word.empty()) {
+        else
+        {
+            if (!word.empty())
+            {
                 int code = getWordCode(word);
                 outputFile << code << " ";
                 word.clear();
@@ -181,7 +183,8 @@ void List::encodeFile(const std::string& inputFileName, const std::string& outpu
             outputFile << ch;
         }
     }
-    if (!word.empty()) {
+    if (!word.empty())
+    {
         int code = getWordCode(word);
         outputFile << code << " ";
     }
