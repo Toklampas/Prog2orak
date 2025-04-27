@@ -15,9 +15,9 @@ public:
     ~List();
 
     void insertWord(const std::string& word);
-    void printToFile(const std::string& filename) const;
     int getWordCode(const std::string& word) const;
-
-    void buildFromFile(const std::string& filename);
     void encodeFile(const std::string& inputfile, const std::string& outfile) const;
+
+    friend std::ofstream& operator<<(std::ofstream& out, const List& list);
+    friend std::ifstream& operator>>(std::ifstream& in, List& list);
 };

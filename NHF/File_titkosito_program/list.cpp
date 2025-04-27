@@ -18,34 +18,6 @@ void List::freeNodes(Node* node) {
     }
 }
 
-// Bemeneti fájl feldolgozása, a szavak kisbetûsítése és beszúrása a fába
-void List::buildFromFile(const std::string& filename)
-{
-    std::ifstream inputFile(filename);
-    if (!inputFile)
-    {
-        std::cerr << "Nem sikerült megnyitni: " << filename << "\n";
-        return;
-    }
-
-    std::string word;
-    char ch;
-
-    while (inputFile.get(ch))
-    {
-        if (std::isalpha(ch))
-            word += std::tolower(ch);
-        else
-            if (!word.empty())
-            {
-                insertWord(word);
-                word.clear();
-            }
-    }
-    if (!word.empty())
-        insertWord(word);
-}
-
 void List::insertWord(const std::string& word) {
     Node** node = &root;
     unsigned currentCharIndex = 0;
@@ -98,26 +70,6 @@ void List::printWords(Node* node, std::string& path, std::ofstream& out) const {
         path.pop_back();
 	// A következõ szóra lépünk
     printWords(node->getNext(), path, out);
-}
-
-void List::printToFile(const std::string& filename) const {
-    std::ofstream out(filename);
-	if (!out)
-    {
-		std::cerr << "Nem sikerült megnyitni: " << filename << "\n";
-		return;
-	}
-	if (!root)
-    {
-		std::cerr << "A fa ures.\n";
-		return;
-	}
-
-    std::string path;
-
-	// Fejléc kiírása
-    out << "id\tno\tword\n";
-    printWords(root, path, out);
 }
 
 int List::getWordCode(const std::string& word) const {
@@ -191,4 +143,50 @@ void List::encodeFile(const std::string& inputFileName, const std::string& outpu
 
 	inputFile.close();
 	outputFile.close();
+}
+
+std::ofstream& operator<<(std::ofstream& out, const List& list) {
+    if (!out)
+    {
+        std::cerr << "Failed to open output file stream.\n";
+        return out;
+    }
+    if (!list.root)
+    {
+        out << "The list is empty.\n";
+        return out;
+    }
+
+    std::string path;
+
+    out << "id\tno\tword\n";
+    list.printWords(list.root, path, out);
+    return out;
+}
+
+std::ifstream& operator>>(std::ifstream& in, List& list) {
+    if (!in)
+    {
+        std::cerr << "Failed to open input file stream.\n";
+        return in;
+    }
+
+    std::string word;
+    char ch;
+
+    while (in.get(ch))
+    {
+        if (std::isalpha(ch))
+            word += std::tolower(ch);
+        else
+            if (!word.empty())
+            {
+                list.insertWord(word);
+                word.clear();
+            }
+    }
+    if (!word.empty())
+        list.insertWord(word);
+
+    return in;
 }

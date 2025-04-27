@@ -6,12 +6,27 @@
 int main() {
     List list;
 
-    list.buildFromFile("feladat.be");
+    std::ifstream inputFile("feladat.be");
+	if (!inputFile) {
+		std::cerr << "Nem sikerult megnyitni a bemeneti fajlt!\n";
+		return 1;
+	}
+	inputFile >> list;
+    inputFile.close();
+	std::cout << "A szavak beolvasva a listaba.\n";
 
-    list.printToFile("feladat.ki");
+    std::ofstream outputFile("feladat.ki");
+	if (!outputFile) {
+		std::cerr << "Nem sikerult megnyitni a kimeneti fajlt!\n";
+		return 1;
+	}
+    outputFile << list;
+    outputFile.close();
+	std::cout << "A szavak listaja kiirva a fajlba.\n";
+
 
     list.encodeFile("feladat.be", "kodolt.ki");
+	std::cout << "A kodolt szoveg kiirva a fajlba.\n";
 
-	std::cout << "A kodolt fajl elkeszult: kodolt.ki\n";
     return 0;
 }
