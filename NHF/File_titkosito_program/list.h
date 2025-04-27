@@ -10,6 +10,8 @@ private:
     void printWords(Node* node, std::string& path, std::ofstream& out) const;
     void freeNodes(Node* node);
 
+    void visualize(Node* node, const std::string& prefix, bool isLast) const;
+
 public:
     List();
     ~List();
@@ -20,4 +22,6 @@ public:
 
     friend std::ofstream& operator<<(std::ofstream& out, const List& list);
     friend std::ifstream& operator>>(std::ifstream& in, List& list);
+
+    void visualize() const;
 };

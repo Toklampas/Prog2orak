@@ -28,5 +28,7 @@ int main() {
     list.encodeFile("feladat.be", "kodolt.ki");
 	std::cout << "A kodolt szoveg kiirva a fajlba.\n";
 
+	list.visualize();
+
     return 0;
 }

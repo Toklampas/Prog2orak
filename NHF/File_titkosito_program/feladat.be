@@ -1,1 +1,1 @@
-Ez egy pelda szoveg a feladat bemenetere. Nezzuk meg mukodik e a dolog!
+The quick brown fox jumps over the lazy dog. The dog barks, the fox hides, and the dog sleeps. Foxes are quick and clever!

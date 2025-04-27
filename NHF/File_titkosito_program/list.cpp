@@ -34,8 +34,8 @@ void List::insertWord(const std::string& word) {
             *node = new Node(currentChar);
         
 		// Megnézzük, hogy lefele létezik-e node, ha nem, létrehozunk egy placeholder node-ot (a szó jelenlegi végén)
-        if (!(*node)->getDown())
-            (*node)->setDown(new Node('\0'));
+//        if (!(*node)->getDown())
+//           (*node)->setDown(new Node('\0'));
 
 		// Lejjebb lépünk a fában, hogy a következõ karaktert is be tudjuk illeszteni
         node = &((*node)->getDownRef());
@@ -44,7 +44,7 @@ void List::insertWord(const std::string& word) {
 
 	//Ha nem létezik lezáró node, akkor létrehozzuk (ez jelöli a szó végét)
     if (!(*node))
-        *node = new Node('\0');
+       *node = new Node('\0');
 
 	// Növeljük a szó elõfordulásainak számát
     (*node)->incrementCount();
@@ -189,4 +189,49 @@ std::ifstream& operator>>(std::ifstream& in, List& list) {
         list.insertWord(word);
 
     return in;
+}
+
+
+// Recursive helper function for visualization
+void List::visualize(Node* node, const std::string& prefix, bool isLast) const {
+    if (!node) return;
+
+    // Print the current node
+    std::cout << prefix;
+    std::cout << (isLast ? "\\-- " : "|-- ");
+    std::cout << "'" << node->getLetter() << "'";
+
+    // If this node has a code or count, print them
+    if (node->getCount() > 0) {
+        std::cout << " (count: " << node->getCount() << ", code: " << node->getCode() << ")";
+    }
+    std::cout << '\n';
+
+    // Build the prefix for child nodes
+    std::string newPrefix = prefix + (isLast ? "    " : "|   ");
+
+    // Get the child and sibling nodes
+    Node* child = node->getDown();
+    Node* sibling = node->getNext();
+
+    // Recursively print child nodes
+    if (child) {
+        visualize(child, newPrefix, sibling == nullptr); // Pass true if no siblings exist
+    }
+
+    // Recursively print sibling nodes
+    if (sibling) {
+        visualize(sibling, prefix, false); // Sibling is never treated as the last node
+    }
+}
+
+// Public method for visualizing the list
+void List::visualize() const {
+    if (!root) {
+        std::cout << "The list is empty.\n";
+        return;
+    }
+
+    std::cout << "List Visualization:\n";
+    visualize(root, "", true);
 }
