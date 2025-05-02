@@ -15,11 +15,10 @@ T* find_max_elem(T* tomb, int db)
         return nullptr;
     T* max_elem = tomb;
     for (int i = 1; i < db; i++)
-        if (max_elem < (tomb+i))
+        if (*max_elem < *(tomb+i))
             max_elem = (tomb+i);
     return max_elem;
 }
-
 
 // 1.c Egészítsd ki a Vector2D osztályt a find_max_elem feladathoz
 class Vector2D {
@@ -30,14 +29,13 @@ private:
 public:
     Vector2D(double x_val, double y_val) : x(x_val), y(y_val) {}
 
-    double length() const {
-	//Fixme!
-        return 0;
-    }
+	double length() const {
+		return sqrt(x * x + y * y);
+	}
 
     bool operator<(Vector2D b)
     {
-        return this->length() < b.length();
+		return this->length() < b.length();
     }
 };
 
@@ -51,9 +49,11 @@ void swapTest() {
 
     double c = 3.14, d = 2.71;
     //2. hívd meg a swap függvényt double típusú változókra is.
-
+	std::cout << "Eredeti értékek: c = " << c << ", d = " << d << std::endl;
+	swap(c, d);
+	std::cout << "Csere után: c = " << c << ", d = " << d << std::endl;
+	
 }
-
 
 // 1.b feladat tesztelése - kommentezd ki és hívd meg, ha megvalósítottad a find_max_elem sablont. A lenti kódot ne írd át!
 
@@ -84,19 +84,16 @@ void maxTest() {
     ////////////////////////////////////
     //1.c feladat - kommentezd ki, ha a Vector2D osztályt megvalósítottad.
 
-    //Vector2D vectors[] = { Vector2D(1.0, 2.0), Vector2D(3.0, 4.0), Vector2D(0.5, 0.5) };
-    //Vector2D* maxVector = find_max_elem(vectors, 3);
+    Vector2D vectors[] = { Vector2D(1.0, 2.0), Vector2D(3.0, 4.0), Vector2D(0.5, 0.5) };
+    Vector2D* maxVector = find_max_elem(vectors, 3);
 
-    //if (maxVector)
-    //    std::cout << "Maximum vector length: " << maxVector->length() << std::endl;
-    //else
-    //    std::cout << "Empty vector array." << std::endl;
+    if (maxVector)
+        std::cout << "Maximum vector length: " << maxVector->length() << std::endl;
+    else
+        std::cout << "Empty vector array." << std::endl;
 
 
 }
-
-
-
 
 int main() {
 
