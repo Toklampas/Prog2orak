@@ -110,12 +110,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="finiteAutomatonTest.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="vectorTest.cpp" />
-    <ClCompile Include="vector.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="vector.h" />
+    <ClInclude Include="finiteAutomaton.hpp" />
+    <ClInclude Include="rule.hpp" />
+    <ClInclude Include="state.hpp" />
+    <ClInclude Include="vector.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
