@@ -1,2 +1,23 @@
-﻿  vectorTest.cpp
+﻿  finiteAutomatonTest.cpp
+C:\Users\adama\Documents\GitHub\Prog2orak\Laborok\11_labor\Vector_HAL\Vector\finiteAutomaton.hpp(67,15): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'finiteAutomatonTest.cpp')
+      C:\Users\adama\Documents\GitHub\Prog2orak\Laborok\11_labor\Vector_HAL\Vector\finiteAutomaton.hpp(67,15):
+      the template instantiation context (the oldest one first) is
+          C:\Users\adama\Documents\GitHub\Prog2orak\Laborok\11_labor\Vector_HAL\Vector\finiteAutomatonTest.cpp(36,31):
+          see reference to class template instantiation 'FiniteAutomaton<std::string,Dog>' being compiled
+          C:\Users\adama\Documents\GitHub\Prog2orak\Laborok\11_labor\Vector_HAL\Vector\finiteAutomaton.hpp(46,7):
+          while compiling class template member function 'bool FiniteAutomaton<std::string,Dog>::run(const Vector<INPUT_TYPE> &)'
+          with
+          [
+              INPUT_TYPE=Dog
+          ]
+              C:\Users\adama\Documents\GitHub\Prog2orak\Laborok\11_labor\Vector_HAL\Vector\finiteAutomatonTest.cpp(92,59):
+              see the first reference to 'FiniteAutomaton<std::string,Dog>::run' in 'finiteAutomatonTest'
+  
+C:\Users\adama\Documents\GitHub\Prog2orak\Laborok\11_labor\Vector_HAL\Vector\finiteAutomaton.hpp(67,45): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'finiteAutomatonTest.cpp')
+  
+C:\Users\adama\Documents\GitHub\Prog2orak\Laborok\11_labor\Vector_HAL\Vector\finiteAutomaton.hpp(71,28): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'finiteAutomatonTest.cpp')
+  
   Vector.vcxproj -> C:\Users\adama\Documents\GitHub\Prog2orak\Laborok\11_labor\Vector_HAL\x64\Debug\Vector.exe
