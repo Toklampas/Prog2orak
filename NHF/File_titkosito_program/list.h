@@ -1,6 +1,7 @@
 #pragma once
 #include "node.h"
 #include <string>
+#include <stdexcept>
 
 class List {
 private:
@@ -19,6 +20,7 @@ public:
     void insertWord(const std::string& word);
     int getWordCode(const std::string& word) const;
     void encodeFile(const std::string& inputfile, const std::string& outfile) const;
+
 
     friend std::ofstream& operator<<(std::ofstream& out, const List& list);
     friend std::ifstream& operator>>(std::ifstream& in, List& list);

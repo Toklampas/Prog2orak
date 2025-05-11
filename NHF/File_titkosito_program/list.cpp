@@ -3,10 +3,19 @@
 #include <fstream>
 #include <iostream>
 
+using namespace std;
+
 List::List() : root(nullptr), nextCode(1) {}
 
 List::~List() {
-    freeNodes(root);
+    try
+    {
+        freeNodes(root);
+    }
+    catch (...)
+    {
+        cerr << "Error while freeing nodes in destructor!" << endl;
+    }
 }
 
 void List::freeNodes(Node* node) {
@@ -18,40 +27,46 @@ void List::freeNodes(Node* node) {
     }
 }
 
-void List::insertWord(const std::string& word) {
-    Node** node = &root;
-    unsigned currentCharIndex = 0;
+void List::insertWord(const string& word) {
+    try {
+        Node** node = &root;
+        unsigned currentCharIndex = 0;
 
-    while (currentCharIndex < word.size())
-    {
-        char currentChar = word[currentCharIndex];
-        
-		// Megkeressük, hogy a jelenlegi karakternek megfelelõ node létezik-e
-        while (*node && (*node)->getLetter() != currentChar)
-            node = &((*node)->getNextRef());
-		// Ha nem létezik, akkor létrehozzuk
+        while (currentCharIndex < word.size())
+        {
+            char currentChar = word[currentCharIndex];
+
+            // Megkeressük, hogy a jelenlegi karakternek megfelelõ node létezik-e
+            while (*node && (*node)->getLetter() != currentChar)
+                node = &((*node)->getNextRef());
+            // Ha nem létezik, akkor létrehozzuk
+            if (!(*node))
+                *node = new Node(currentChar);
+
+            // Lejjebb lépünk a fában, hogy a következõ karaktert is be tudjuk illeszteni
+            node = &((*node)->getDownRef());
+            ++currentCharIndex;
+        }
+
+        //Ha nem létezik lezáró node, akkor létrehozzuk (ez jelöli a szó végét)
         if (!(*node))
-            *node = new Node(currentChar);
-        
-		// Megnézzük, hogy lefele létezik-e node, ha nem, létrehozunk egy placeholder node-ot (a szó jelenlegi végén)
-//        if (!(*node)->getDown())
-//           (*node)->setDown(new Node('\0'));
+            *node = new Node('\0');
 
-		// Lejjebb lépünk a fában, hogy a következõ karaktert is be tudjuk illeszteni
-        node = &((*node)->getDownRef());
-        ++currentCharIndex;
+        // Növeljük a szó elõfordulásainak számát
+        (*node)->incrementCount();
+
+        // Ha a node-hoz még nem lett kód rendelve, akkor hozzárendelünk egyet
+        if ((*node)->getCode() == 0)
+            (*node)->setCode(nextCode++);
     }
-
-	//Ha nem létezik lezáró node, akkor létrehozzuk (ez jelöli a szó végét)
-    if (!(*node))
-       *node = new Node('\0');
-
-	// Növeljük a szó elõfordulásainak számát
-    (*node)->incrementCount();
-
-	// Ha a node-hoz még nem lett kód rendelve, akkor hozzárendelünk egyet
-    if ((*node)->getCode() == 0)
-        (*node)->setCode(nextCode++);
+    catch (const bad_alloc& ex)
+    {
+        throw runtime_error("Memory allocation failed while inserting word: " + word);
+	}
+	catch (...)
+	{
+		throw runtime_error("Unknown error occurred while inserting word: " + word);
+	}
 }
 
 void List::printWords(Node* node, std::string& path, std::ofstream& out) const {
@@ -72,7 +87,7 @@ void List::printWords(Node* node, std::string& path, std::ofstream& out) const {
     printWords(node->getNext(), path, out);
 }
 
-int List::getWordCode(const std::string& word) const {
+int List::getWordCode(const string& word) const {
     Node* node = root;
     unsigned currentCharIndex = 0;
 
@@ -102,113 +117,134 @@ int List::getWordCode(const std::string& word) const {
 }
 
 // Kódolt szöveg elõállítása
-void List::encodeFile(const std::string& inputFileName, const std::string& outputFileName) const {
-    std::ifstream inputFile(inputFileName);
-    std::ofstream outputFile(outputFileName);
+void List::encodeFile(const string& inputFileName, const string& outputFileName) const {
+    try {
+        ifstream inputFile(inputFileName);
+        if (!inputFile)
+            throw runtime_error("Failed to open input file: " + inputFileName);
 
-    if (!inputFile)
-    {
-        std::cerr << "Nem sikerült megnyitni: " << inputFileName << "\n";
-        return;
-    }
-    if (!outputFile) 
-    {
-        std::cerr << "Nem sikerült megnyitni: " << outputFileName << "\n";
-        return;
-    }
+        ofstream outputFile(outputFileName);
+        if (!outputFile)
+            throw runtime_error("Failed to open output file: " + outputFileName);
 
-    std::string word;
-    char ch;
 
-    while (inputFile.get(ch))
-    {
-        if (std::isalpha(ch))
-            word += std::tolower(ch);
-        else
+        string word;
+        char ch;
+
+        while (inputFile.get(ch))
         {
-            if (!word.empty())
+            if (std::isalpha(ch))
+                word += tolower(ch);
+            else
             {
-                int code = getWordCode(word);
-                outputFile << code << " ";
-                word.clear();
+                if (!word.empty())
+                {
+                    int code = getWordCode(word);
+                    outputFile << code << " ";
+                    word.clear();
+                }
+                outputFile << ch;
             }
-            outputFile << ch;
         }
-    }
-    if (!word.empty())
-    {
-        int code = getWordCode(word);
-        outputFile << code << " ";
-    }
+        if (!word.empty())
+        {
+            int code = getWordCode(word);
+            outputFile << code << " ";
+        }
 
-	inputFile.close();
-	outputFile.close();
+        inputFile.close();
+        outputFile.close();
+    }
+	catch (const exception& ex)
+	{
+        throw runtime_error("Error during file encoding: " + string(ex.what()));
+	}
+	catch (...)
+	{
+		throw runtime_error("Unknown error occurred during file encoding.");
+	}
 }
 
 std::ofstream& operator<<(std::ofstream& out, const List& list) {
-    if (!out)
+    try
     {
-        std::cerr << "Failed to open output file stream.\n";
-        return out;
+        if (!out)
+            throw runtime_error("Failed to open output file stream.");
+        if (!list.root)
+        {
+            out << "The list is empty." << endl;
+            return out;
+        }
+
+        string path;
+        out << "id\tno\tword" << endl;
+        list.printWords(list.root, path, out);
     }
-    if (!list.root)
+    catch (const exception& ex)
     {
-        out << "The list is empty.\n";
-        return out;
+        cerr << "Error during writing to output file: " << ex.what() << endl;
     }
-
-    std::string path;
-
-    out << "id\tno\tword\n";
-    list.printWords(list.root, path, out);
+    catch (...)
+    {
+        cerr << "Unknown error occurred during writing to output file." << endl;
+    }
     return out;
 }
 
 std::ifstream& operator>>(std::ifstream& in, List& list) {
-    if (!in)
+    try
     {
-        std::cerr << "Failed to open input file stream.\n";
-        return in;
+        if (!in)
+        {
+            throw runtime_error("Failed to open input file stream.");
+        }
+
+        string word;
+        char ch;
+
+        while (in.get(ch))
+        {
+            if (std::isalpha(ch))
+                word += tolower(ch);
+            else
+                if (!word.empty())
+                {
+                    list.insertWord(word);
+                    word.clear();
+                }
+        }
+        if (!word.empty())
+            list.insertWord(word);
     }
-
-    std::string word;
-    char ch;
-
-    while (in.get(ch))
+    catch (const exception& ex)
     {
-        if (std::isalpha(ch))
-            word += std::tolower(ch);
-        else
-            if (!word.empty())
-            {
-                list.insertWord(word);
-                word.clear();
-            }
+        cerr << "Error during reading from input file: " << ex.what() << endl;
     }
-    if (!word.empty())
-        list.insertWord(word);
-
+    catch (...)
+    {
+        cerr << "Unknown error occurred during reading from input file." << endl;
+    }
     return in;
 }
 
 
 // Recursive helper function for visualization
-void List::visualize(Node* node, const std::string& prefix, bool isLast) const {
+void List::visualize(Node* node, const string& prefix, bool isLast) const {
     if (!node) return;
 
     // Print the current node
-    std::cout << prefix;
-    std::cout << (isLast ? "\\-- " : "|-- ");
-    std::cout << "'" << node->getLetter() << "'";
+    cout << prefix;
+    cout << (isLast ? "\\-- " : "|-- ");
+    cout << "'" << node->getLetter() << "'";
 
     // If this node has a code or count, print them
     if (node->getCount() > 0) {
-        std::cout << " (count: " << node->getCount() << ", code: " << node->getCode() << ")";
+        cout << " (count: " << node->getCount() << ", code: " << node->getCode() << ")";
     }
-    std::cout << '\n';
+    cout << endl;
 
     // Build the prefix for child nodes
-    std::string newPrefix = prefix + (isLast ? "    " : "|   ");
+    string newPrefix = prefix + (isLast ? "    " : "|   ");
 
     // Get the child and sibling nodes
     Node* child = node->getDown();
@@ -229,10 +265,10 @@ void List::visualize(Node* node, const std::string& prefix, bool isLast) const {
 void List::visualize() const {
     if (!root)
     {
-        std::cout << "The list is empty.\n";
+        cout << "The list is empty." << endl;
         return;
     }
 
-    std::cout << "List Visualization:\n";
+    cout << "List Visualization:" << endl << endl;
     visualize(root, "", true);    
 }

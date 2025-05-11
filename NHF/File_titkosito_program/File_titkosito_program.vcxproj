@@ -127,15 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="fileManager.h" />
     <ClInclude Include="list.h" />
+    <ClInclude Include="menuRenderer.h" />
     <ClInclude Include="menuSystem.h" />
     <ClInclude Include="node.h" />
+    <ClInclude Include="userInputHandler.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="fileManager.cpp" />
     <ClCompile Include="list.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="menuRenderer.cpp" />
     <ClCompile Include="menuSystem.cpp" />
     <ClCompile Include="node.cpp" />
+    <ClCompile Include="userInputHandler.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
