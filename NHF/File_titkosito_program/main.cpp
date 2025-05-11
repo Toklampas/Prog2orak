@@ -1,6 +1,7 @@
 #include "list.h"
 #include "menuSystem.h"
 #include <stdexcept>
+#include <crtdbg.h>
 
 int main()
 {
@@ -18,5 +19,7 @@ int main()
         std::cerr << "An unknown error occurred!" << std::endl;
     }
 
+	
     return 0;
+    _CrtDumpMemoryLeaks();
 }
