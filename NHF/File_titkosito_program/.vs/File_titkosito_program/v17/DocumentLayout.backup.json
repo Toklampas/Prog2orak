@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\menuRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:menuRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\menuSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:menuSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\menuSystem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:menuSystem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\menuRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:menuRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\node.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:node.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\node.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -35,24 +15,44 @@
       "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\menuRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:menuRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\fileManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:fileManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\menuRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:menuRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\menuSystem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:menuSystem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\fileManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:fileManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\userInputHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:userInputHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\userInputHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:userInputHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\node.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:node.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\userInputHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79F7AA0A-2210-4104-A267-BA2B74CE5703}|File_titkosito_program.vcxproj|solutionrelative:userInputHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,11 +62,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "node.cpp",
               "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\node.cpp",
               "RelativeDocumentMoniker": "node.cpp",
@@ -79,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "node.h",
               "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\node.h",
               "RelativeDocumentMoniker": "node.h",
@@ -87,25 +87,24 @@
               "RelativeToolTip": "node.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-20T08:58:45.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T08:58:45.023Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "menuSystem.cpp",
               "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\menuSystem.cpp",
               "RelativeDocumentMoniker": "menuSystem.cpp",
               "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\menuSystem.cpp",
               "RelativeToolTip": "menuSystem.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAHMAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-11T13:28:31.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "userInputHandler.cpp",
               "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\userInputHandler.cpp",
               "RelativeDocumentMoniker": "userInputHandler.cpp",
@@ -113,12 +112,11 @@
               "RelativeToolTip": "userInputHandler.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-11T13:28:02.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T13:28:02.568Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "userInputHandler.h",
               "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\userInputHandler.h",
               "RelativeDocumentMoniker": "userInputHandler.h",
@@ -126,12 +124,11 @@
               "RelativeToolTip": "userInputHandler.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-11T13:27:51.063Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T13:27:51.063Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "fileManager.cpp",
               "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\fileManager.cpp",
               "RelativeDocumentMoniker": "fileManager.cpp",
@@ -139,12 +136,11 @@
               "RelativeToolTip": "fileManager.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-11T13:27:17.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T13:27:17.524Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "fileManager.h",
               "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\fileManager.h",
               "RelativeDocumentMoniker": "fileManager.h",
@@ -152,12 +148,11 @@
               "RelativeToolTip": "fileManager.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-11T13:27:00.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T13:27:00.328Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "menuRenderer.cpp",
               "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\menuRenderer.cpp",
               "RelativeDocumentMoniker": "menuRenderer.cpp",
@@ -170,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "menuRenderer.h",
               "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\menuRenderer.h",
               "RelativeDocumentMoniker": "menuRenderer.h",
@@ -178,12 +173,11 @@
               "RelativeToolTip": "menuRenderer.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-11T13:26:18.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T13:26:18.55Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "menuSystem.h",
               "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\menuSystem.h",
               "RelativeDocumentMoniker": "menuSystem.h",
@@ -191,8 +185,7 @@
               "RelativeToolTip": "menuSystem.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-05T16:10:16.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T16:10:16.499Z"
             },
             {
               "$type": "Document",
@@ -202,14 +195,13 @@
               "RelativeDocumentMoniker": "list.cpp",
               "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\list.cpp",
               "RelativeToolTip": "list.cpp",
-              "ViewState": "AgIAAPYAAAAAAAAAAAAAAA8BAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8BAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-11T13:09:13.502Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T13:09:13.502Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "list.h",
               "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\list.h",
               "RelativeDocumentMoniker": "list.h",
@@ -222,16 +214,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\NHF\\File_titkosito_program\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-26T14:00:10.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T14:00:10.394Z"
             }
           ]
         }

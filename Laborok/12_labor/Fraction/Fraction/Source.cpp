@@ -9,10 +9,10 @@ Fraction reciprocal(const Fraction& f) {
 
 
 int main() {
-    try {
+    try
+    {
         Fraction f1(3, 1, 4);
         Fraction f2(2, 2, 5);
-
 
         //1. Keszitsd el a double konverzios operatorodat, es probald ki a kovetkezo sorokkal
         double result = static_cast<double>(f1 + f2);
@@ -32,9 +32,7 @@ int main() {
 
         //6. Keszitsd el a reciprocal fuggvenyt, es probald ki a kovetkezo sorokkal
         //A reciprocal fuggvenyen belul tortenik egy kivetel dobasa, amit a main fuggvenyben el kell kapni
-        //std::cout << "Reciprocal of 0: " << static_cast<double>(reciprocal(0.0)) << std::endl;
-
-
+        std::cout << "Reciprocal of 0: " << static_cast<double>(reciprocal(0.0)) << std::endl;
 
         return 0;
     }

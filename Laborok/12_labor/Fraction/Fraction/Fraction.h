@@ -33,7 +33,6 @@ public:
     int getNumerator() const { return numerator; }
     int getDenominator() const { return denominator; }
 
-
     //Konverzios operatorok: double es string
     operator double() const;
     operator string() const;
@@ -43,8 +42,9 @@ public:
 
     //Konverzios konstruktor
     Fraction(double theOther);
+    int find_gcd(int a, int b) const;
 
     //reciprok
-
+    Fraction reciprocal() const;
 };
 

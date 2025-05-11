@@ -33,6 +33,7 @@ public:
 	virtual ~null_pointer_exception()throw() {}
 };
 
+/*
 int main()
 {
 	try
@@ -56,3 +57,4 @@ int main()
 	}
 	return 0;
 }
+*/

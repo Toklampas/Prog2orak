@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\12_labor\\ExceptionHandling\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6DD15DB0-1B15-4C08-B430-4192A0B86C46}|ExceptionHandling\\ExceptionHandling.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\12_labor\\ExceptionHandling\\ExceptionHandling\\exception1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6DD15DB0-1B15-4C08-B430-4192A0B86C46}|ExceptionHandling\\ExceptionHandling.vcxproj|solutionrelative:ExceptionHandling\\exception1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DD15DB0-1B15-4C08-B430-4192A0B86C46}|ExceptionHandling\\ExceptionHandling.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\12_labor\\ExceptionHandling\\ExceptionHandling\\exception2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6DD15DB0-1B15-4C08-B430-4192A0B86C46}|ExceptionHandling\\ExceptionHandling.vcxproj|solutionrelative:ExceptionHandling\\exception2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DD15DB0-1B15-4C08-B430-4192A0B86C46}|ExceptionHandling\\ExceptionHandling.vcxproj|C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\12_labor\\ExceptionHandling\\ExceptionHandling\\exception3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6DD15DB0-1B15-4C08-B430-4192A0B86C46}|ExceptionHandling\\ExceptionHandling.vcxproj|solutionrelative:ExceptionHandling\\exception3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "exception3.cpp",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\12_labor\\ExceptionHandling\\ExceptionHandling\\exception3.cpp",
+              "RelativeDocumentMoniker": "ExceptionHandling\\exception3.cpp",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\12_labor\\ExceptionHandling\\ExceptionHandling\\exception3.cpp",
+              "RelativeToolTip": "ExceptionHandling\\exception3.cpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-10T16:55:19.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "exception2.cpp",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\12_labor\\ExceptionHandling\\ExceptionHandling\\exception2.cpp",
+              "RelativeDocumentMoniker": "ExceptionHandling\\exception2.cpp",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\12_labor\\ExceptionHandling\\ExceptionHandling\\exception2.cpp",
+              "RelativeToolTip": "ExceptionHandling\\exception2.cpp",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAEoAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-10T16:55:18.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "exception1.cpp",
+              "DocumentMoniker": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\12_labor\\ExceptionHandling\\ExceptionHandling\\exception1.cpp",
+              "RelativeDocumentMoniker": "ExceptionHandling\\exception1.cpp",
+              "ToolTip": "C:\\Users\\adama\\Documents\\GitHub\\Prog2orak\\Laborok\\12_labor\\ExceptionHandling\\ExceptionHandling\\exception1.cpp",
+              "RelativeToolTip": "ExceptionHandling\\exception1.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-10T16:55:17.101Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
