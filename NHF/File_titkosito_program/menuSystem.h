@@ -4,147 +4,242 @@
 #include <fstream>
 #include <string>
 #include <cctype>
+#include <conio.h> // getch() miatt
+using namespace std;
 
 class MenuSystem {
 private:
     List list;
     bool isFileLoaded = false; // Flag to track if a file has been loaded
-    std::string loadedFileName; // Stores the name of the loaded file
+    string loadedFileName; // Stores the name of the loaded file
 
     void displayMenu() const {
-        std::cout << "\n=====================================\n";
-        if (isFileLoaded) {
-            std::cout << "Current Loaded File: " << loadedFileName << "\n";
-        }
-        else {
-            std::cout << "No file loaded yet.\n";
-        }
-        std::cout << "=====================================\n";
-        std::cout << "Menu Options:\n";
-        std::cout << "1. Load Words from File\n";
-        if (isFileLoaded) {
-            std::cout << "2. Save Words to File\n";
-            std::cout << "3. Encode a File\n";
-            std::cout << "4. Visualize Word List\n";
-            std::cout << "5. Search for Word Code\n";
-        }
-        std::cout << "6. Exit\n";
-        std::cout << "Enter your choice: ";
+        cout << "========================================" << endl;
+        if (isFileLoaded)
+            cout << "Current Loaded File: " << loadedFileName << endl;
+        else
+            cout << "No file loaded yet." << endl;
+        cout << "========================================" << endl;
+        cout << "Menu Options:" << endl;
+        
+        if (isFileLoaded)
+        {
+            cout << "1. Load Words from File\t(Already loaded)" << endl;
+            cout << "2. Save Words to File" << endl;
+            cout << "3. Encode Loaded File" << endl;
+            cout << "4. Visualize Word List" << endl;
+            cout << "5. Search for Word Code" << endl;
+            cout << "6. Clear Loaded Data" << endl;
+		}
+		else
+		{
+            cout << "1. Load Words from File" << endl;
+			cout << "2. Save Words to File\t(No file)" << endl;
+			cout << "3. Encode Loaded File\t(No file)" << endl;
+			cout << "4. Visualize Word List\t(No file)" << endl;
+			cout << "5. Search for Word Code\t(No file)" << endl;
+			cout << "6. Clear Loaded Data\t(No file)" << endl;
+		}
+        cout << "7. Exit" << endl;
+        cout << "========================================" << endl;
+        cout << "Enter your choice: ";
     }
 
-    void loadWordsFromFile() {
-        std::string inputFileName;
-        std::cout << "Enter the input file name: ";
-        std::cin >> inputFileName;
-
-        std::ifstream inputFile(inputFileName);
-        if (!inputFile) {
-            std::cerr << "Failed to open input file!\n";
+    void loadWordsFromFile()
+    {
+        if (isFileLoaded)
+        {
+            system("cls");
+            cerr << "A file is already loaded. Please clear the loaded data first to load a new file." << endl << endl;
+            return;
         }
-        else {
+
+        string inputFileName;
+        cout << "Enter the input file name: ";
+        cin >> inputFileName;
+
+        ifstream inputFile(inputFileName);
+        if (!inputFile)
+        {
+            system("cls");
+            cerr << "Failed to open input file!" << endl << endl;
+        }
+        else
+        {
             inputFile >> list;
             inputFile.close();
             isFileLoaded = true;
             loadedFileName = inputFileName; // Store the loaded file name
-            std::cout << "Words loaded into the list from " << loadedFileName << ".\n";
+            system("cls");
+            cout << "Words loaded into the list from " << loadedFileName << "." << endl << endl;
         }
     }
 
-    void saveWordsToFile() const {
-        if (!isFileLoaded) {
-            std::cerr << "You must load a file first!\n";
+    void saveWordsToFile() const
+    {
+        if (!isFileLoaded)
+        {
+            system("cls");
+            cerr << "You must load a file first!" << endl << endl;
             return;
         }
 
-        std::string outputFileName;
-        std::cout << "Enter the output file name: ";
-        std::cin >> outputFileName;
+        string outputFileName;
+        cout << "Enter the output file name: ";
+        cin >> outputFileName;
 
-        std::ofstream outputFile(outputFileName);
-        if (!outputFile) {
-            std::cerr << "Failed to open output file!\n";
+        ofstream outputFile(outputFileName);
+        if (!outputFile)
+        {
+            system("cls");
+            cerr << "Failed to open output file!" << endl << endl;
         }
-        else {
+        else
+        {
             outputFile << list;
             outputFile.close();
-            std::cout << "Words saved to the file: " << outputFileName << ".\n";
+            system("cls");
+            cout << "Words saved to the file: " << outputFileName << "." << endl << endl;
         }
     }
 
-    void encodeFile() const {
-        if (!isFileLoaded) {
-            std::cerr << "You must load a file first!\n";
+    void encodeFile() const
+    {
+        if (!isFileLoaded)
+        {
+            system("cls");
+            cerr << "You must load a file first!" << endl << endl;
             return;
         }
 
-        std::string inputFileName, outputFileName;
-        std::cout << "Enter the input file name to encode: ";
-        std::cin >> inputFileName;
-        std::cout << "Enter the output file name for encoded text: ";
-        std::cin >> outputFileName;
+        string outputFileName;
+        cout << "Enter the output file name for encoded text: ";
+        cin >> outputFileName;
 
-        list.encodeFile(inputFileName, outputFileName);
-        std::cout << "File encoded and saved to: " << outputFileName << ".\n";
+        list.encodeFile(loadedFileName, outputFileName);
+        system("cls");
+        cout << "File encoded and saved to: " << outputFileName << "." << endl << endl;
     }
 
-    void visualizeWordList() const {
-        if (!isFileLoaded) {
-            std::cerr << "You must load a file first!\n";
+    void visualizeWordList() const
+    {
+        if (!isFileLoaded)
+        {
+            cerr << "You must load a file first!" << endl;
             return;
         }
+
+		system("cls"); // Clear the console screen
 
         list.visualize();
+
+        cout << endl << "Visualization complete. Press ENTER to return to the menu!";
+        auto a = _getch(); // Wait for user input
+        system("cls");
     }
 
-    void searchForWordCode() const {
-        if (!isFileLoaded) {
-            std::cerr << "You must load a file first!\n";
+    void searchForWordCode() const
+    {
+        if (!isFileLoaded)
+        {
+            system("cls");
+            cerr << "You must load a file first!" << endl << endl;
             return;
         }
 
-        std::string word;
-        std::cout << "Enter the word to search for: ";
-        std::cin >> word;
+        string word;
+        cout << "Enter the word to search for: ";
+        cin >> word;
 
         int code = list.getWordCode(word);
-        if (code != 0) {
-            std::cout << "The code for '" << word << "' is: " << code << '\n';
+
+        system("cls");
+        if (code != 0)
+            cout << "The code for '" << word << "' is: " << code << endl << endl;
+        else
+            cout << "Word not found in the list." << endl << endl;
+    }
+
+    void clearLoadedData()
+    {
+        if (!isFileLoaded)
+        {
+            system("cls");
+            cerr << "No data to clear. Please load a file first." << endl << endl;
+            return;
         }
-        else {
-            std::cout << "Word not found in the list.\n";
-        }
+
+        list = List();
+        isFileLoaded = false;
+        loadedFileName.clear();
+
+        system("cls");
+        cout << "Loaded data has been cleared." << endl << endl;
     }
 
 public:
-    void run() {
+    void run()
+    {
         int choice;
-        do {
+        do
+        {
             displayMenu();
-            std::cin >> choice;
+            cin >> choice;
+            if (cin.fail()) // Handle invalid input
+            {
+                cin.clear(); // Clear the error flag
+                cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Discard invalid input
+                system("cls");
+                cerr << "Invalid input. Please enter a number." << endl << endl;
+                continue;
+            }
 
-            switch (choice) {
+            switch (choice)
+            {
             case 1: loadWordsFromFile(); break;
             case 2:
                 if (isFileLoaded) saveWordsToFile();
-                else std::cerr << "Invalid choice. Please load a file first.\n";
+                else {
+                    system("cls");
+                    cerr << "Invalid choice. Please load a file first." << endl << endl;
+                }
                 break;
             case 3:
                 if (isFileLoaded) encodeFile();
-                else std::cerr << "Invalid choice. Please load a file first.\n";
+                else {
+                    system("cls");
+                    cerr << "Invalid choice. Please load a file first." << endl << endl;
+                }
                 break;
             case 4:
                 if (isFileLoaded) visualizeWordList();
-                else std::cerr << "Invalid choice. Please load a file first.\n";
+                else {
+                    system("cls");
+                    cerr << "Invalid choice. Please load a file first." << endl << endl;
+                }
                 break;
             case 5:
                 if (isFileLoaded) searchForWordCode();
-                else std::cerr << "Invalid choice. Please load a file first.\n";
+                else {
+                    system("cls");
+                    cerr << "Invalid choice. Please load a file first." << endl << endl;
+                }
                 break;
-            case 6: std::cout << "Exiting the program. Goodbye!\n"; break;
-            default: std::cerr << "Invalid choice. Please try again.\n"; break;
+            case 6:
+                if (isFileLoaded) clearLoadedData();
+                else {
+                    system("cls");
+                    cerr << "Invalid choice. Please load a file first." << endl << endl;
+                }
+                break;
+            case 7:
+                cout << "Exiting the program." << endl << endl;
+                break;
+            default:
+                system("cls");
+                cerr << "Invalid choice. Please try again." << endl << endl;
+                break;
             }
-        } while (choice != 6);
+        } while (choice != 7);
     }
 };
-
-

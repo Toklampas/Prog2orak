@@ -227,11 +227,12 @@ void List::visualize(Node* node, const std::string& prefix, bool isLast) const {
 
 // Public method for visualizing the list
 void List::visualize() const {
-    if (!root) {
+    if (!root)
+    {
         std::cout << "The list is empty.\n";
         return;
     }
 
     std::cout << "List Visualization:\n";
-    visualize(root, "", true);
+    visualize(root, "", true);    
 }
