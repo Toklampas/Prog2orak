@@ -62,7 +62,7 @@ void MenuSystem::handleUserChoice(int choice) {
             system("cls");
             list.visualize();
             cout << endl << "Visualization complete. Press ENTER to return to the menu!";
-            char a = _getch();
+            char a = _getch(); // wait for a charachter to be pressed
             system("cls");
             break;
         }

@@ -1,7 +1,9 @@
+//#define _CRTDBG_MAP_ALLOC
+//#include <crtdbg.h>
+
 #include "list.h"
 #include "menuSystem.h"
 #include <stdexcept>
-#include <crtdbg.h>
 
 int main()
 {
@@ -9,6 +11,7 @@ int main()
     {
         MenuSystem menu;
         menu.run();
+        //_CrtDumpMemoryLeaks();
     }
     catch (const std::exception& ex)
     {
@@ -18,8 +21,6 @@ int main()
     {
         std::cerr << "An unknown error occurred!" << std::endl;
     }
-
 	
-    return 0;
-    _CrtDumpMemoryLeaks();
+    return 0;    
 }

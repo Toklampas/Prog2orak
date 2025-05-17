@@ -10,6 +10,7 @@ List::List() : root(nullptr), nextCode(1) {}
 List::~List() {
     try
     {
+		//cout << "Diagnostic: Freeing nodes in list destructor..." << endl;
         freeNodes(root);
     }
     catch (...)
@@ -18,6 +19,7 @@ List::~List() {
     }
 }
 
+// Frees the nodes in the list recursively
 void List::freeNodes(Node* node) {
     if (node)
     {
@@ -27,6 +29,7 @@ void List::freeNodes(Node* node) {
     }
 }
 
+// Inserts a new word into the list
 void List::insertWord(const string& word) {
     try {
         Node** node = &root;
@@ -36,30 +39,33 @@ void List::insertWord(const string& word) {
         {
             char currentChar = word[currentCharIndex];
 
-            // Megkeressük, hogy a jelenlegi karakternek megfelelõ node létezik-e
+			// We search for the node that matches the current character
             while (*node && (*node)->getLetter() != currentChar)
                 node = &((*node)->getNextRef());
-            // Ha nem létezik, akkor létrehozzuk
+
+			// If it doesn't exist, we create it
             if (!(*node))
                 *node = new Node(currentChar);
+            
 
-            // Lejjebb lépünk a fában, hogy a következõ karaktert is be tudjuk illeszteni
+			// We move down the tree to insert the next character
             node = &((*node)->getDownRef());
             ++currentCharIndex;
         }
 
-        //Ha nem létezik lezáró node, akkor létrehozzuk (ez jelöli a szó végét)
+		// If the ending node doesn't exist, we create it (this marks the end of the word)
         if (!(*node))
             *node = new Node('\0');
 
-        // Növeljük a szó elõfordulásainak számát
+		// We increment the count of occurrences of the word
         (*node)->incrementCount();
 
-        // Ha a node-hoz még nem lett kód rendelve, akkor hozzárendelünk egyet
+		// If the node doesn't have a code yet, we assign one to it
         if ((*node)->getCode() == 0)
             (*node)->setCode(nextCode++);
     }
-    catch (const bad_alloc& ex)
+	// new automatically throws std::bad_alloc if memory allocation fails
+    catch (const bad_alloc&)
     {
         throw runtime_error("Memory allocation failed while inserting word: " + word);
 	}
@@ -69,21 +75,22 @@ void List::insertWord(const string& word) {
 	}
 }
 
+// Prints the words in the list to the output file
 void List::printWords(Node* node, std::string& path, std::ofstream& out) const {
-	// Alapeset: ha a node nullptr, akkor kilépünk
+	// Base case: if the node is nullptr, we exit
     if (!node)
         return;
-	// Ha a node nem nullptr, akkor az aktuális karaktert hozzáadjuk a path-hoz
+	// If the node is not nullptr, we add the current character to the path
     if (node->getLetter())
         path.push_back(node->getLetter());
-	// Ha count nagyobb mint 0, akkor a szó végéhez értünk, kiírjuk a code-ot, a count-ot és a szót
+	// If the count is greater than 0, we have reached the end of a word, we print the code, count and the word itself
     if (node->getCount() > 0)
         out << node->getCode() << '\t' << node->getCount() << '\t' << path << '\n';
-	// A szó következõ karakteréhez lépünk
+	// We go down the tree to find the next character
     printWords(node->getDown(), path, out);
     if (node->getLetter())
         path.pop_back();
-	// A következõ szóra lépünk
+	// We go to the next node at the same level (this is the next word)
     printWords(node->getNext(), path, out);
 }
 
@@ -96,27 +103,27 @@ int List::getWordCode(const string& word) const {
         char currentChar = word[currentCharIndex];
         Node* currentNode = node;
 
-		// Megkeressük a megfelelõ node-ot a jelenlegi karakterhez
+		// We search for the node that matches the current character
         while (currentNode && currentNode->getLetter() != currentChar)
             currentNode = currentNode->getNext();
 
-		// Ha nem találunk megfelelõ node-ot, akkor a szó nem eleme a listának
+		// If we don't find a matching node, the word is not in the list
         if (!currentNode)
             return 0;
 
-		// Az input szó következõ karakteréhez lépünk és azzal is elvégezzük a keresést
+		// We get the next character of the input word and search for it
         node = currentNode->getDown();
         ++currentCharIndex;
     }
 
-	// Ha az egész szó megtalálható, visszaadjuk a kódját
+	// If we have reached the end of the word and the node has a code, we return it
     if (node && currentCharIndex == word.size() && node->getCode() != 0)
         return node->getCode();
 
     return 0;
 }
 
-// Kódolt szöveg elõállítása
+// Encodes the input file and writes the encoded text to the output file
 void List::encodeFile(const string& inputFileName, const string& outputFileName) const {
     try {
         ifstream inputFile(inputFileName);
@@ -131,21 +138,26 @@ void List::encodeFile(const string& inputFileName, const string& outputFileName)
         string word;
         char ch;
 
+		// Read the input file character by character
         while (inputFile.get(ch))
         {
+			// If the character is an alphabetic character, we add it to the word and convert it to lowercase
             if (std::isalpha(ch))
                 word += tolower(ch);
             else
             {
+				// If the character is not an alphabetic character, we write the word code to the output file
                 if (!word.empty())
                 {
                     int code = getWordCode(word);
                     outputFile << code << " ";
                     word.clear();
                 }
+				// We write the non-alphabetic character to the output file as is
                 outputFile << ch;
             }
         }
+		// If we reach the end of the file and there is still a word left, we write the last word code to the output file
         if (!word.empty())
         {
             int code = getWordCode(word);
@@ -165,6 +177,7 @@ void List::encodeFile(const string& inputFileName, const string& outputFileName)
 	}
 }
 
+// Overloaded operator to write the list to an output file
 std::ofstream& operator<<(std::ofstream& out, const List& list) {
     try
     {
@@ -191,6 +204,7 @@ std::ofstream& operator<<(std::ofstream& out, const List& list) {
     return out;
 }
 
+// Overloaded operator to read words from an input file and insert them into the list
 std::ifstream& operator>>(std::ifstream& in, List& list) {
     try
     {
@@ -228,47 +242,61 @@ std::ifstream& operator>>(std::ifstream& in, List& list) {
 }
 
 
-// Recursive helper function for visualization
+// Private visualization function to print the list structure
 void List::visualize(Node* node, const string& prefix, bool isLast) const {
+	// Base case: if the node is nullptr, we exit
     if (!node) return;
 
-    // Print the current node
-    cout << prefix;
-    cout << (isLast ? "\\-- " : "|-- ");
-    cout << "'" << node->getLetter() << "'";
+	// Print the prefix for the current node
+    cout << prefix << (isLast ? "\\-- " : "|-- ");
 
-    // If this node has a code or count, print them
-    if (node->getCount() > 0) {
+    // Print the node's letter or "(end)" if it's the end-of-word node
+    if (node->getLetter() == '\0')
+        cout << "(end)";
+    else
+        cout << "'" << node->getLetter() << "'";
+
+	// If the node has a code, we print its count and code
+    if (node->getCount() > 0)
         cout << " (count: " << node->getCount() << ", code: " << node->getCode() << ")";
-    }
     cout << endl;
 
-    // Build the prefix for child nodes
-    string newPrefix = prefix + (isLast ? "    " : "|   ");
+    // Build the prefix for the next level
+    string downPrefix = prefix + (isLast ? "    " : "|   ");
 
-    // Get the child and sibling nodes
-    Node* child = node->getDown();
-    Node* sibling = node->getNext();
+    // Count number of next nodes 
+	// We need this to determine for each node if it's the last one or not
+    Node* down = node->getDown();
+    int nNext = 0;
+    for (Node* c = down; c; c = c->getNext())
+        ++nNext;
 
-    // Recursively print child nodes
-    if (child) {
-        visualize(child, newPrefix, sibling == nullptr); // Pass true if no siblings exist
-    }
-
-    // Recursively print sibling nodes
-    if (sibling) {
-        visualize(sibling, prefix, false); // Sibling is never treated as the last node
+	// We call the visualization function recursively for each node
+    int i = 0;
+    for (Node* c = down; c; c = c->getNext(), ++i)
+    {
+        bool last = (i == nNext - 1);
+        visualize(c, downPrefix, last);
     }
 }
 
-// Public method for visualizing the list
+// Public function to visualize the list
 void List::visualize() const {
     if (!root)
-    {
-        cout << "The list is empty." << endl;
-        return;
-    }
+		throw runtime_error("The list couldn't be visualized, because it's empty");
 
     cout << "List Visualization:" << endl << endl;
-    visualize(root, "", true);    
+
+	// Count the number of next nodes at the root level
+    int nNext = 0;
+    for (Node* c = root; c; c = c->getNext())
+        ++nNext;
+
+    int i = 0;
+    for (Node* c = root; c; c = c->getNext(), ++i)
+    {
+		// For each root level node, we call the private visualization function, we also check if it's the last node
+        bool last = (i == nNext - 1);
+        visualize(c, "", last);
+    }
 }

@@ -6,7 +6,7 @@ private:
 	char letter; // character stored in the node
 	Node* down; // pointer to the next level (down)
 	Node* next; // pointer to the next node at the same level
-    int count; 
+    int count; // the number of occurences of a given word
 	int code; // code assigned to the word ending at this node
 
 public:

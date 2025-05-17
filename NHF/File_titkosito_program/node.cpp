@@ -1,8 +1,11 @@
 #include "node.h"
+#include <iostream>
 
 Node::Node(char ch) : letter(ch), down(nullptr), next(nullptr), count(0), code(0) {}
 
-Node::~Node() {}
+Node::~Node() {
+	//std::cout << "Diagnostic: Deleting node with letter: " << letter << std::endl;
+}
 
 char Node::getLetter() const { return letter; }
 Node* Node::getDown() const { return down; }

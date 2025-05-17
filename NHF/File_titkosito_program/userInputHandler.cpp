@@ -8,7 +8,7 @@ int UserInputHandler::getValidatedChoice() {
     if (cin.fail())
     {
 	    cin.clear(); // clear the error flag
-	    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // discard invalid input
+	    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // discard invalid (non numeric) input
         return -1;
     }
     return choice;
