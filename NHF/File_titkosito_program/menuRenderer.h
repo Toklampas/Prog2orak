@@ -7,4 +7,3 @@ class MenuRenderer {
 public:
     static void displayMenu(bool isFileLoaded, const string& loadedFileName);
 };
-

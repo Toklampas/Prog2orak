@@ -6,7 +6,7 @@
 class List {
 private:
 	Node* root; // Pointer to the root of the list
-	int nextCode; // The next code to be assigned to a wordq
+	int nextCode; // The next code to be assigned to a word
 
     void printWords(Node* node, std::string& path, std::ofstream& out) const;
     void freeNodes(Node* node);
