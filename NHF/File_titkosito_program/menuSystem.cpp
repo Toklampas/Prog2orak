@@ -4,6 +4,10 @@
 
 using namespace std;
 
+void MenuSystem::clearScreen() {
+    system("cls");
+}
+
 void MenuSystem::handleUserChoice(int choice) {
     try
     {
@@ -17,7 +21,7 @@ void MenuSystem::handleUserChoice(int choice) {
             {
                 isFileLoaded = true;
                 loadedFileName = fileName;
-                system("cls");
+				clearScreen();
                 cout << "Words loaded into the list from " << loadedFileName << "." << endl << endl;
             }
             else
@@ -32,7 +36,7 @@ void MenuSystem::handleUserChoice(int choice) {
             string fileName = UserInputHandler::getValidatedString("Enter the output file name: ");
             if (FileManager::saveWords(fileName, list))
             {
-                system("cls");
+				clearScreen();
                 cout << "Words saved to the file: " << fileName << "." << endl << endl;
             }
             else
@@ -47,7 +51,7 @@ void MenuSystem::handleUserChoice(int choice) {
             string outputFileName = UserInputHandler::getValidatedString("Enter the output file name for encoded text: ");
             if (FileManager::encodeFile(loadedFileName, outputFileName, list))
             {
-                system("cls");
+				clearScreen();
                 cout << "File encoded and saved to: " << outputFileName << "." << endl << endl;
             }
             else
@@ -59,11 +63,11 @@ void MenuSystem::handleUserChoice(int choice) {
             if (!isFileLoaded)
                 throw logic_error("No file is loaded. Please load a file first.");
 
-            system("cls");
+			clearScreen();
             list.visualize();
             cout << endl << "Visualization complete. Press ENTER to return to the menu!";
             char a = _getch(); // wait for a charachter to be pressed
-            system("cls");
+			clearScreen();
             break;
         }
 
@@ -73,7 +77,7 @@ void MenuSystem::handleUserChoice(int choice) {
 
             string word = UserInputHandler::getValidatedString("Enter the word to search for: ");
             int code = list.getWordCode(word);
-            system("cls");
+			clearScreen();
             if (code != 0)
                 cout << "The code for '" << word << "' is: " << code << endl << endl;
             else
@@ -88,13 +92,13 @@ void MenuSystem::handleUserChoice(int choice) {
             list = List();
             isFileLoaded = false;
             loadedFileName.clear();
-            system("cls");
+			clearScreen();
             cout << "Loaded data has been cleared." << endl << endl;
             break;
         }
 
         case 7: { // Exit
-            system("cls");
+			clearScreen();
             cout << "Exiting the program." << endl;
             break;
         }
@@ -105,7 +109,7 @@ void MenuSystem::handleUserChoice(int choice) {
     }
     catch (const exception& ex)
     {
-		system("cls");
+		clearScreen();
         cerr << "Error: " << ex.what() << endl << endl;
     }
 }

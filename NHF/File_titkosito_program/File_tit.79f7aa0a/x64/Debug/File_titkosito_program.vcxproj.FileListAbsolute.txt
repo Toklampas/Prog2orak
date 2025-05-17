@@ -1,2 +1,0 @@
-C:\Users\adama\Documents\GitHub\Prog2orak\NHF\File_titkosito_program\x64\Debug\File_titkosito_program.exe.lastcodeanalysissucceeded
-C:\Users\adama\Documents\GitHub\Prog2orak\NHF\File_titkosito_program\File_tit.79f7aa0a\x64\Debug\NativeCodeAnalysis.read.1.tlog

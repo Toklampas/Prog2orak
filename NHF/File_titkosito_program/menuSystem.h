@@ -17,4 +17,5 @@ private:
 
 public:
     void run();
+    static void clearScreen();
 };

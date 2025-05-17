@@ -45,7 +45,10 @@ void List::insertWord(const string& word) {
 
 			// If it doesn't exist, we create it
             if (!(*node))
+            {
                 *node = new Node(currentChar);
+			    //cout << "Diagnostic: Created node for character: " << currentChar << endl;
+			}
             
 
 			// We move down the tree to insert the next character
@@ -55,7 +58,10 @@ void List::insertWord(const string& word) {
 
 		// If the ending node doesn't exist, we create it (this marks the end of the word)
         if (!(*node))
+        {
             *node = new Node('\0');
+			//cout << "Diagnostic: Created end node for word: " << word << endl;
+		}
 
 		// We increment the count of occurrences of the word
         (*node)->incrementCount();

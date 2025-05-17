@@ -1,11 +1,4 @@
-﻿  fileManager.cpp
-  list.cpp
-C:\Users\adama\Documents\GitHub\Prog2orak\NHF\File_titkosito_program\list.cpp(66,29): warning C4101: 'ex': unreferenced local variable
-  main.cpp
-  menuRenderer.cpp
-  menuSystem.cpp
+﻿  list.cpp
   node.cpp
-  userInputHandler.cpp
-  Running Code Analysis for C/C++...
   Generating Code...
   File_titkosito_program.vcxproj -> C:\Users\adama\Documents\GitHub\Prog2orak\NHF\File_titkosito_program\x64\Debug\File_titkosito_program.exe
