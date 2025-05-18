@@ -3,6 +3,8 @@
 #include <string>
 #include <stdexcept>
 
+#include "memtrace.h"
+
 class List {
 private:
 	Node* root; // Pointer to the root of the list

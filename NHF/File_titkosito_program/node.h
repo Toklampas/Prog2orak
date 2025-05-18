@@ -1,6 +1,8 @@
 #pragma once
 #include <stdexcept>
 
+#include "memtrace.h"
+
 class Node {
 private:
 	char letter; // character stored in the node

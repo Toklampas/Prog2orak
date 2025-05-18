@@ -102,7 +102,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);MEMTRACE</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClInclude Include="fileManager.h" />
     <ClInclude Include="list.h" />
+    <ClInclude Include="memtrace.h" />
     <ClInclude Include="menuRenderer.h" />
     <ClInclude Include="menuSystem.h" />
     <ClInclude Include="node.h" />
@@ -138,6 +139,7 @@
     <ClCompile Include="fileManager.cpp" />
     <ClCompile Include="list.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="memtrace.cpp" />
     <ClCompile Include="menuRenderer.cpp" />
     <ClCompile Include="menuSystem.cpp" />
     <ClCompile Include="node.cpp" />

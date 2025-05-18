@@ -1,9 +1,8 @@
-//#define _CRTDBG_MAP_ALLOC
-//#include <crtdbg.h>
-
 #include "list.h"
 #include "menuSystem.h"
 #include <stdexcept>
+
+#include "memtrace.h"
 
 int main()
 {
@@ -11,7 +10,6 @@ int main()
     {
         MenuSystem menu;
         menu.run();
-        //_CrtDumpMemoryLeaks();
     }
     catch (const std::exception& ex)
     {

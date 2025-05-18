@@ -2,6 +2,8 @@
 #include <iostream>
 #include <conio.h> // For _getch()
 
+#include "memtrace.h"
+
 using namespace std;
 
 void MenuSystem::clearScreen() {

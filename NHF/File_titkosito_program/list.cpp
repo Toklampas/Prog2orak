@@ -3,6 +3,8 @@
 #include <fstream>
 #include <iostream>
 
+#include "memtrace.h"
+
 using namespace std;
 
 List::List() : root(nullptr), nextCode(1) {}

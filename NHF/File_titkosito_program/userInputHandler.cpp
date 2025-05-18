@@ -2,6 +2,8 @@
 #include <iostream>
 #include <limits>
 
+#include "memtrace.h"
+
 int UserInputHandler::getValidatedChoice() {
     int choice;
     cin >> choice;

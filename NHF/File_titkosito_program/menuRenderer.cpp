@@ -1,5 +1,7 @@
 #include "menuRenderer.h"
 
+#include "memtrace.h"
+
 void MenuRenderer::displayMenu(bool isFileLoaded, const string& loadedFileName) {
     cout << "========================================" << endl;
     if (isFileLoaded)

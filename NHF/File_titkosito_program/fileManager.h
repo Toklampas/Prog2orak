@@ -1,6 +1,9 @@
 #pragma once
 #include "list.h"
 #include <string>
+
+#include "memtrace.h"
+
 using namespace std;
 
 class FileManager {

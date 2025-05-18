@@ -5,6 +5,8 @@
 #include "fileManager.h"
 #include "userInputHandler.h"
 
+#include "memtrace.h"
+
 using namespace std;
 
 class MenuSystem {

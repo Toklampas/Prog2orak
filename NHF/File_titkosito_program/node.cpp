@@ -1,6 +1,8 @@
 #include "node.h"
 #include <iostream>
 
+#include "memtrace.h"
+
 Node::Node(char ch) : letter(ch), down(nullptr), next(nullptr), count(0), code(0) {}
 
 Node::~Node() {

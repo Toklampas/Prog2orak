@@ -2,6 +2,8 @@
 #include <fstream>
 #include <iostream>
 
+#include "memtrace.h"
+
 bool FileManager::loadWords(const string& fileName, List& list) {
     ifstream inputFile(fileName);
     if (!inputFile)
