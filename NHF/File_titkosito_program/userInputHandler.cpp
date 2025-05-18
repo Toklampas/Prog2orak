@@ -2,7 +2,7 @@
 #include <iostream>
 #include <limits>
 
-#include "memtrace.h"
+//#include "memtrace.h"
 
 int UserInputHandler::getValidatedChoice() {
     int choice;

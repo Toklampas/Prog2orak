@@ -3,7 +3,7 @@
 #include <fstream>
 #include <iostream>
 
-#include "memtrace.h"
+//#include "memtrace.h"
 
 using namespace std;
 

@@ -2,7 +2,7 @@
 #include <iostream>
 #include <conio.h> // For _getch()
 
-#include "memtrace.h"
+//#include "memtrace.h"
 
 using namespace std;
 

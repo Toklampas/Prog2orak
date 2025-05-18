@@ -2,7 +2,7 @@
 #include <fstream>
 #include <iostream>
 
-#include "memtrace.h"
+//#include "memtrace.h"
 
 bool FileManager::loadWords(const string& fileName, List& list) {
     ifstream inputFile(fileName);

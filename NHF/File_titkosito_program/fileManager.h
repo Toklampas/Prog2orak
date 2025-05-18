@@ -2,7 +2,7 @@
 #include "list.h"
 #include <string>
 
-#include "memtrace.h"
+//#include "memtrace.h"
 
 using namespace std;
 
